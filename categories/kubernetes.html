@@ -10,7 +10,7 @@
 	<meta property="og:title" content="Kubernetes" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://jij000.github.io/categories/kubernetes.html" />
+<meta property="og:url" content="https://jij000.github.io/post/kubernetes.html/categories/kubernetes.html" />
 <meta property="og:updated_time" content="2017-08-21T00:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary"/>
@@ -19,11 +19,11 @@
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="alternate" type="application/rss+xml" href="/categories/kubernetes/index.xml" title="My Blog">
+	<link rel="alternate" type="application/rss+xml" href="/post/kubernetes.html/categories/kubernetes/index.xml" title="My Blog">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
-	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/custom.css">
-	<link rel="shortcut icon" href="/favicon.ico">
+	<link rel="stylesheet" href="/post/kubernetes.html/css/style.css">
+	
+	<link rel="shortcut icon" href="/post/kubernetes.html/favicon.ico">
 		
 </head>
 <body class="body">
@@ -31,7 +31,7 @@
 		<header class="header">
 	<div class="container">
 		<div class="logo">
-			<a class="logo__link" href="/" title="My Blog" rel="home">
+			<a class="logo__link" href="/post/kubernetes.html" title="My Blog" rel="home">
 				<div class="logo__title">My Blog</div>
 				
 			</a>
@@ -43,7 +43,7 @@
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
-			<a class="menu__link" href="/post/kubernetes.html">
+			<a class="menu__link" href="/post/kubernetes.html/post/kubernetes.html">
 				
 				<span class="menu__text">Kubernetes</span>
 				
@@ -62,13 +62,13 @@
 		<h1 class="main__title">Kubernetes</h1>
 	</header><article class="list__item post">
 	<figure class="list__thumbnail">
-		<a href="https://jij000.github.io/post/kubernetes.html">
-			<img src="/Thumbnail/Kubernetes_logo_without_workmark.svg" alt="Kubernetes" />
+		<a href="https://jij000.github.io/post/kubernetes.html/post/kubernetes.html">
+			<img src="/post/kubernetes.html/Thumbnail/Kubernetes_logo_without_workmark.svg" alt="Kubernetes" />
 		</a>
 	</figure>
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/kubernetes.html" rel="bookmark">
+			<a href="/post/kubernetes.html/post/kubernetes.html" rel="bookmark">
 			Kubernetes
 			</a>
 		</h3>
@@ -80,7 +80,7 @@
 
 <div class="meta__item-categories meta__item">
 	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/kubernetes.html" rel="category">Kubernetes</a>
+	<span class="meta__text"><a class="meta__link" href="/post/kubernetes.html/categories/kubernetes.html" rel="category">Kubernetes</a>
 	</span>
 </div></div>
 	</header>
@@ -92,7 +92,13 @@ ControllerManager 维持副本期望数
 Scheduler 负责接受任务, 选择合适节点进行分配任务
 kubelet 直接跟容器引擎交互, 实现容器的生命周期管理
 kube-proxy 负责写入规则至 IPTABLES, IPVS实现服务映射访问
-CoreDNS 可以为集群中的SVC创建一个域名IP的对应关系解析
+Pod 运行容器, 可运行多个 所有Pod在一个可直接连通的扁平的网络空间中
+ 自主式Pod 控制器管理的Pod  其他插件 CoreDNS 可以为集群中的SVC创建一个域名IP的对应关系解析
+Dashboard 给K8S集群一个B/S访问体系
+INGRESS 官方只能实现四层代理, INGRESS实现七层代理
+FEDETATION 跨集群中心, 多K8S统一管理
+Prometheus K8S集群监控
+ELK K8S集群日志统一分析接入平台
 	</div>
 </article>
 </main>
@@ -106,14 +112,14 @@ CoreDNS 可以为集群中的SVC创建一个域名IP的对应关系解析
 			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
 		</label>
 		<input class="widget-search__submit" type="submit" value="Search">
-		<input type="hidden" name="sitesearch" value="https://jij000.github.io/" />
+		<input type="hidden" name="sitesearch" value="https://jij000.github.io/post/kubernetes.html" />
 	</form>
 </div>
 <div class="widget-recent widget">
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
-			<li class="widget__item"><a class="widget__link" href="/post/kubernetes.html">Kubernetes</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/kubernetes.html/post/kubernetes.html">Kubernetes</a></li>
 		</ul>
 	</div>
 </div>
@@ -122,7 +128,7 @@ CoreDNS 可以为集群中的SVC创建一个域名IP的对应关系解析
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item">
-				<a class="widget__link" href="/categories/kubernetes.html">Kubernetes</a>
+				<a class="widget__link" href="/post/kubernetes.html/categories/kubernetes.html">Kubernetes</a>
 			</li>
 		</ul>
 	</div>
@@ -130,7 +136,7 @@ CoreDNS 可以为集群中的SVC创建一个域名IP的对应关系解析
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
-		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes.html" title="Kubernetes">Kubernetes</a>
+		<a class="widget-taglist__link widget__link btn" href="/post/kubernetes.html/tags/kubernetes.html" title="Kubernetes">Kubernetes</a>
 	</div>
 </div>
 <div class="widget-social widget">
@@ -158,6 +164,6 @@ CoreDNS 可以为集群中的SVC创建一个域名IP的对应关系解析
 	</div>
 </footer>
 	</div>
-<script async defer src="/js/menu.js"></script>
-<script src="/js/custom.js"></script></body>
+<script async defer src="/post/kubernetes.html/js/menu.js"></script>
+</body>
 </html>
