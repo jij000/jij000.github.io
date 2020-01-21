@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>My Blog</title>
+    <link>/</link>
+    <description>Recent content on My Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 21 Aug 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Kubernetes</title>
+      <link>/posts/kubernetes.html</link>
+      <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/kubernetes.html</guid>
+      <description>架构图 kubectl 命令行控制工具
+etcd key value 数据库, 存储集群所有重要配置信息(持久化)
+api server 所有服务的统一访问入口
+ControllerManager 维持副本期望数
+Scheduler 负责接受任务, 选择合适节点进行分配任务
+kubelet 直接跟容器引擎交互, 实现容器的生命周期管理
+kube-proxy 负责写入规则至 IPTABLES, IPVS实现服务映射访问
+COREDNS 可以为集群中的SVC创建一个域名IP的对应关系解析</description>
+    </item>
+    
+  </channel>
+</rss>
