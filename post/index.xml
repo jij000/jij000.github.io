@@ -24,7 +24,7 @@ ControllerManager 维持副本期望数
 Scheduler 负责接受任务, 选择合适节点进行分配任务
 kubelet 直接跟容器引擎交互, 实现容器的生命周期管理
 kube-proxy 负责写入规则至 IPTABLES, IPVS实现服务映射访问
-COREDNS 可以为集群中的SVC创建一个域名IP的对应关系解析</description>
+CoreDNS 可以为集群中的SVC创建一个域名IP的对应关系解析</description>
     </item>
     
   </channel>
