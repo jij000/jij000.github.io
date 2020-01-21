@@ -13,10 +13,10 @@
     
     <item>
       <title>Kubernetes</title>
-      <link>/posts/kubernetes.html</link>
+      <link>/post/kubernetes.html</link>
       <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/posts/kubernetes.html</guid>
+      <guid>/post/kubernetes.html</guid>
       <description>架构图 kubectl 命令行控制工具
 etcd key value 数据库, 存储集群所有重要配置信息(持久化)
 api server 所有服务的统一访问入口
