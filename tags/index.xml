@@ -2,21 +2,48 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on My Blog</title>
-    <link>https://jij000.github.io/post/kubernetes.html/tags.html</link>
+    <link>https://jij000.github.io/tags.html</link>
     <description>Recent content in Tags on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Aug 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://jij000.github.io/post/kubernetes.html/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jij000.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Kubernetes</title>
-      <link>https://jij000.github.io/post/kubernetes.html/tags/kubernetes.html</link>
+      <link>https://jij000.github.io/tags/kubernetes.html</link>
       <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/kubernetes.html/tags/kubernetes.html</guid>
+      <guid>https://jij000.github.io/tags/kubernetes.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Another test</title>
+      <link>https://jij000.github.io/tags/another-test.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/tags/another-test.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AWS</title>
+      <link>https://jij000.github.io/tags/aws.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/tags/aws.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://jij000.github.io/tags/test.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/tags/test.html</guid>
       <description></description>
     </item>
     

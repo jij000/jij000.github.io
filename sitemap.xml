@@ -3,43 +3,70 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://jij000.github.io/post/kubernetes.html/categories.html</loc>
+    <loc>https://jij000.github.io/categories.html</loc>
     <lastmod>2017-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jij000.github.io/post/kubernetes.html/categories/kubernetes.html</loc>
+    <loc>https://jij000.github.io/categories/kubernetes.html</loc>
     <lastmod>2017-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jij000.github.io/post/kubernetes.html/tags/kubernetes.html</loc>
+    <loc>https://jij000.github.io/tags/kubernetes.html</loc>
     <lastmod>2017-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jij000.github.io/post/kubernetes.html/post/kubernetes.html</loc>
+    <loc>https://jij000.github.io/post/kubernetes.html</loc>
     <lastmod>2017-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jij000.github.io/post/kubernetes.html/</loc>
+    <loc>https://jij000.github.io/</loc>
     <lastmod>2017-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jij000.github.io/post/kubernetes.html/post.html</loc>
+    <loc>https://jij000.github.io/post.html</loc>
     <lastmod>2017-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jij000.github.io/post/kubernetes.html/tags.html</loc>
+    <loc>https://jij000.github.io/tags.html</loc>
     <lastmod>2017-08-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jij000.github.io/post/kubernetes.html/untitled.html</loc>
-    <priority>0</priority>
+    <loc>https://jij000.github.io/tags/another-test.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/categories/aws.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/tags/aws.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/post/aws.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/categories/java.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/post/java-core.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/post/new-features-in-java8.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/tags/test.html</loc>
   </url>
   
 </urlset>

@@ -1,48 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My Blog</title>
-    <link>https://jij000.github.io/post.html</link>
-    <description>Recent content in Posts on My Blog</description>
+    <title>Test on My Blog</title>
+    <link>https://jij000.github.io/tags/test.html</link>
+    <description>Recent content in Test on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Aug 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://jij000.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jij000.github.io/tags/test/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Kubernetes</title>
-      <link>https://jij000.github.io/post/kubernetes.html</link>
-      <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://jij000.github.io/post/kubernetes.html</guid>
-      <description>架构图 kubectl 命令行控制工具
-etcd key value 数据库, 存储集群所有重要配置信息(持久化)
-api server 所有服务的统一访问入口
-ControllerManager 维持副本期望数
-Scheduler 负责接受任务, 选择合适节点进行分配任务
-kubelet 直接跟容器引擎交互, 实现容器的生命周期管理
-kube-proxy 负责写入规则至 IPTABLES, IPVS实现服务映射访问
-Pod 运行容器, 可运行多个 所有Pod在一个可直接连通的扁平的网络空间中
- 自主式Pod 控制器管理的Pod  其他插件 CoreDNS 可以为集群中的SVC创建一个域名IP的对应关系解析
-Dashboard 给K8S集群一个B/S访问体系
-INGRESS 官方只能实现四层代理, INGRESS实现七层代理
-FEDETATION 跨集群中心, 多K8S统一管理
-Prometheus K8S集群监控
-ELK K8S集群日志统一分析接入平台</description>
-    </item>
-    
-    <item>
-      <title>AWS</title>
-      <link>https://jij000.github.io/post/aws.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jij000.github.io/post/aws.html</guid>
-      <description>EC2 虚拟主机
-S3 存储
-Lambda 函数计算服务, 无状态</description>
-    </item>
     
     <item>
       <title>Java Core</title>

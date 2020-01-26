@@ -4,25 +4,25 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Posts - My Blog</title>
+	<title>AWS - My Blog</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-	<meta property="og:title" content="Posts" />
+	<meta property="og:title" content="AWS" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="/posts.html" />
-<meta property="og:updated_time" content="2017-08-21T00:00:00+00:00" />
+<meta property="og:url" content="https://jij000.github.io/categories/aws.html" />
+
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Posts"/>
+<meta name="twitter:title" content="AWS"/>
 <meta name="twitter:description" content=""/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="alternate" type="application/rss+xml" href="/posts/index.xml" title="My Blog">
+	<link rel="alternate" type="application/rss+xml" href="/categories/aws/index.xml" title="My Blog">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 	<link rel="stylesheet" href="/css/style.css">
-	<link rel="stylesheet" href="/css/custom.css">
+	
 	<link rel="shortcut icon" href="/favicon.ico">
 		
 </head>
@@ -43,9 +43,30 @@
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
-			<a class="menu__link" href="/posts/kubernetes.html">
+			<a class="menu__link" href="/post/aws.html">
+				
+				<span class="menu__text">AWS</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/java-core.html">
+				
+				<span class="menu__text">Java Core</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/kubernetes.html">
 				
 				<span class="menu__text">Kubernetes</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/new-features-in-java8.html">
+				
+				<span class="menu__text">New features in Java 8</span>
 				
 			</a>
 		</li>
@@ -59,40 +80,30 @@
 			
 <main class="main list" role="main">
 	<header class="main__header">
-		<h1 class="main__title">Posts</h1>
+		<h1 class="main__title">AWS</h1>
 	</header><article class="list__item post">
 	<figure class="list__thumbnail">
-		<a href="/posts/kubernetes.html">
-			<img src="/img/placeholder.jpg" alt="Kubernetes" />
+		<a href="https://jij000.github.io/post/aws.html">
+			<img src="/Thumbnail/aws_logo.jpg" alt="AWS" />
 		</a>
 	</figure>
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/posts/kubernetes.html" rel="bookmark">
-			Kubernetes
+			<a href="/post/aws.html" rel="bookmark">
+			AWS
 			</a>
 		</h3>
 		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2017-08-21T00:00:00">2017-08-21</time>
-</div>
-
 <div class="meta__item-categories meta__item">
 	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/kubernetes.html" rel="category">Kubernetes</a>
+	<span class="meta__text"><a class="meta__link" href="/categories/aws.html" rel="category">AWS</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		架构图 kubectl 命令行控制工具
-etcd key value 数据库, 存储集群所有重要配置信息(持久化)
-api server 所有服务的统一访问入口
-ControllerManager 维持副本期望数
-Scheduler 负责接受任务, 选择合适节点进行分配任务
-kubelet 直接跟容器引擎交互, 实现容器的生命周期管理
-kube-proxy 负责写入规则至 IPTABLES, IPVS实现服务映射访问
-COREDNS 可以为集群中的SVC创建一个域名IP的对应关系解析
+		EC2 虚拟主机
+S3 存储
+Lambda 函数计算服务, 无状态
 	</div>
 </article>
 </main>
@@ -106,13 +117,30 @@ COREDNS 可以为集群中的SVC创建一个域名IP的对应关系解析
 			<input class="widget-search__field" type="search" placeholder="SEARCH..." value="" name="q" aria-label="SEARCH...">
 		</label>
 		<input class="widget-search__submit" type="submit" value="Search">
-		<input type="hidden" name="sitesearch" value="/" />
+		<input type="hidden" name="sitesearch" value="https://jij000.github.io/" />
 	</form>
+</div>
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/kubernetes.html">Kubernetes</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/aws.html">AWS</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/java-core.html">Java Core</a></li>
+			<li class="widget__item"><a class="widget__link" href="/post/new-features-in-java8.html">New features in Java 8</a></li>
+		</ul>
+	</div>
 </div>
 <div class="widget-categories widget">
 	<h4 class="widget__title">Categories</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/aws.html">AWS</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/java.html">Java</a>
+			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/kubernetes.html">Kubernetes</a>
 			</li>
@@ -122,7 +150,10 @@ COREDNS 可以为集群中的SVC创建一个域名IP的对应关系解析
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/another-test.html" title="Another test">Another test</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/aws.html" title="AWS">AWS</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes.html" title="Kubernetes">Kubernetes</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/test.html" title="Test">Test</a>
 	</div>
 </div>
 <div class="widget-social widget">
@@ -151,5 +182,5 @@ COREDNS 可以为集群中的SVC创建一个域名IP的对应关系解析
 </footer>
 	</div>
 <script async defer src="/js/menu.js"></script>
-<script src="/js/custom.js"></script></body>
+</body>
 </html>

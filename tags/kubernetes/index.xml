@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kubernetes on My Blog</title>
-    <link>https://jij000.github.io/post/kubernetes.html/tags/kubernetes.html</link>
+    <link>https://jij000.github.io/tags/kubernetes.html</link>
     <description>Recent content in Kubernetes on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 21 Aug 2017 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://jij000.github.io/post/kubernetes.html/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jij000.github.io/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Kubernetes</title>
-      <link>https://jij000.github.io/post/kubernetes.html/post/kubernetes.html</link>
+      <link>https://jij000.github.io/post/kubernetes.html</link>
       <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/kubernetes.html/post/kubernetes.html</guid>
+      <guid>https://jij000.github.io/post/kubernetes.html</guid>
       <description>架构图 kubectl 命令行控制工具
 etcd key value 数据库, 存储集群所有重要配置信息(持久化)
 api server 所有服务的统一访问入口
