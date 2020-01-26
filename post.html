@@ -11,7 +11,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jij000.github.io/post.html" />
-<meta property="og:updated_time" content="2017-08-21T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-01-26T00:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
@@ -83,6 +83,34 @@
 		<h1 class="main__title">Posts</h1>
 	</header><article class="list__item post">
 	<figure class="list__thumbnail">
+		<a href="https://jij000.github.io/post/docker.html">
+			<img src="/Thumbnail/Docker_logo_011.0.png" alt="Docker" />
+		</a>
+	</figure>
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/docker.html" rel="bookmark">
+			Docker
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-01-26T00:00:00">2020-01-26</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/docker.html" rel="category">Docker</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		常用命令
+docker pull nginx # 拉取镜像docker run -d -p 8080:80 nginx # 运行容器, -d 后台运行, -p 主机端口 : 容器端口 做映射docker run -d -P nginx # 运行容器, -d 后台运行, -P 容器的所有端口和主机随机的端口映射, docker ps 可以看到映射的情况docker images # 查看现有镜像docker ps # 查看正在运行的容器docker run --help # 查看帮助docker exec --help # 进入容器内部docker exec -it 03 bash # 进入容器内部, 打开一个容器终端, 03是容器id的开头部分exit # 退出容器终端docker stop 1f #关闭容器docker restart 1f #重启容器which nginx # 查找nginx的安装位置netstat -na|grep 8888 # 查找端口状态uname -a # 查看系统版本制作镜像 Dockerfile
+	</div>
+</article><article class="list__item post">
+	<figure class="list__thumbnail">
 		<a href="https://jij000.github.io/post/kubernetes.html">
 			<img src="/Thumbnail/Kubernetes_logo_without_workmark.svg" alt="Kubernetes" />
 		</a>
@@ -106,7 +134,8 @@
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		架构图 kubectl 命令行控制工具
+		详细教程
+架构图 kubectl 命令行控制工具
 etcd key value 数据库, 存储集群所有重要配置信息(持久化)
 api server 所有服务的统一访问入口
 ControllerManager 维持副本期望数
@@ -217,6 +246,7 @@ Nashorn, JavaScript 引擎 Java 8提供了一个新的Nashorn javascript引擎�
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/docker.html">Docker</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/kubernetes.html">Kubernetes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/aws.html">AWS</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/java-core.html">Java Core</a></li>
@@ -232,6 +262,9 @@ Nashorn, JavaScript 引擎 Java 8提供了一个新的Nashorn javascript引擎�
 				<a class="widget__link" href="/categories/aws.html">AWS</a>
 			</li>
 			<li class="widget__item">
+				<a class="widget__link" href="/categories/docker.html">Docker</a>
+			</li>
+			<li class="widget__item">
 				<a class="widget__link" href="/categories/java.html">Java</a>
 			</li>
 			<li class="widget__item">
@@ -245,6 +278,7 @@ Nashorn, JavaScript 引擎 Java 8提供了一个新的Nashorn javascript引擎�
 	<div class="widget__content">
 		<a class="widget-taglist__link widget__link btn" href="/tags/another-test.html" title="Another test">Another test</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/aws.html" title="AWS">AWS</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/docker.html" title="Docker">Docker</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes.html" title="Kubernetes">Kubernetes</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/test.html" title="Test">Test</a>
 	</div>

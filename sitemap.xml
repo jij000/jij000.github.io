@@ -4,6 +4,41 @@
   
   <url>
     <loc>https://jij000.github.io/categories.html</loc>
+    <lastmod>2020-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/tags/docker.html</loc>
+    <lastmod>2020-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/categories/docker.html</loc>
+    <lastmod>2020-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/post/docker.html</loc>
+    <lastmod>2020-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/</loc>
+    <lastmod>2020-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/post.html</loc>
+    <lastmod>2020-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/tags.html</loc>
+    <lastmod>2020-01-26T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/tags/kubernetes.html</loc>
     <lastmod>2017-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -13,27 +48,7 @@
   </url>
   
   <url>
-    <loc>https://jij000.github.io/tags/kubernetes.html</loc>
-    <lastmod>2017-08-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jij000.github.io/post/kubernetes.html</loc>
-    <lastmod>2017-08-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jij000.github.io/</loc>
-    <lastmod>2017-08-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jij000.github.io/post.html</loc>
-    <lastmod>2017-08-21T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jij000.github.io/tags.html</loc>
     <lastmod>2017-08-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -42,11 +57,11 @@
   </url>
   
   <url>
-    <loc>https://jij000.github.io/categories/aws.html</loc>
+    <loc>https://jij000.github.io/tags/aws.html</loc>
   </url>
   
   <url>
-    <loc>https://jij000.github.io/tags/aws.html</loc>
+    <loc>https://jij000.github.io/categories/aws.html</loc>
   </url>
   
   <url>
