@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Design Patterns - My Blog</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Design Patterns">
+	<meta property="og:title" content="Design Patterns" />
+<meta property="og:description" content="Design Patterns" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jij000.github.io/post/design-patterns.html" />
+
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Design Patterns"/>
+<meta name="twitter:description" content="Design Patterns"/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="My Blog" rel="home">
+				<div class="logo__title">My Blog</div>
+				
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/post/aws.html">
+				
+				<span class="menu__text">AWS</span>
+				
+			</a>
+		</li>
+		<li class="menu__item menu__item--active">
+			<a class="menu__link" href="/post/design-patterns.html">
+				
+				<span class="menu__text">Design Patterns</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/docker.html">
+				
+				<span class="menu__text">Docker</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/hibernate.html">
+				
+				<span class="menu__text">Hibernate</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/java-core.html">
+				
+				<span class="menu__text">Java Core</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/jvm.html">
+				
+				<span class="menu__text">JVM</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/kubernetes.html">
+				
+				<span class="menu__text">Kubernetes</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/new-features-in-java8.html">
+				
+				<span class="menu__text">New features in Java 8</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Design Patterns</h1>
+			<p class="post__lead">Example lead - highlighted near the title</p>
+			<div class="post__meta meta">
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/design-patterns.html" rel="category">Design Patterns</a>
+	</span>
+</div></div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#principle-原则">Principle 原则</a>
+      <ul>
+        <li><a href="#开闭原则">开闭原则</a></li>
+        <li><a href="#依赖倒置原则">依赖倒置原则</a></li>
+        <li><a href="#单一职责原则">单一职责原则</a></li>
+        <li><a href="#接口隔离原则">接口隔离原则</a></li>
+        <li><a href="#迪米特法则">迪米特法则</a></li>
+        <li><a href="#里氏替换原则">里氏替换原则</a></li>
+        <li><a href="#合成复用原则-composite-reuse-principle-crp">合成复用原则 Composite Reuse Principle, CRP</a></li>
+      </ul>
+    </li>
+    <li><a href="#creational-design-pattern">Creational Design Pattern</a>
+      <ul>
+        <li><a href="#factory-pattern-工厂模式">Factory Pattern 工厂模式</a></li>
+        <li><a href="#abstract-factory-pattern-抽象工厂模式">Abstract Factory Pattern 抽象工厂模式</a></li>
+        <li><a href="#singleton-pattern-单例模式">Singleton Pattern 单例模式</a></li>
+        <li><a href="#prototype-pattern-原型模式">Prototype Pattern 原型模式</a></li>
+        <li><a href="#builder-pattern-建造者模式">Builder Pattern 建造者模式</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div>
+<div class="content post__content clearfix">
+			<h2 id="principle-原则">Principle 原则</h2>
+<h3 id="开闭原则">开闭原则</h3>
+<ul>
+<li>一个软件实体, 如类, 模块, 函数, 应该对扩展开放, 对修改关</li>
+<li>面对抽象, 接口编程</li>
+</ul>
+<h3 id="依赖倒置原则">依赖倒置原则</h3>
+<ul>
+<li>高层模块不应该依赖低层模块, 二者都应该依赖其抽象</li>
+<li>抽象不应该依赖细节; 细节应该依赖抽象</li>
+<li>针对接口编程, 不要针对实现编程</li>
+</ul>
+<h3 id="单一职责原则">单一职责原则</h3>
+<ul>
+<li>不要存在多于一个导致类变更的原因</li>
+<li>一个类/接口/方法只负责一项职责</li>
+</ul>
+<h3 id="接口隔离原则">接口隔离原则</h3>
+<ul>
+<li>用多个专门的接口, 而不使用单一的总接口, 客户端不应该依赖它不需要的接口</li>
+<li>一个类对一个类的依赖应该建立在最小的接口上</li>
+<li>建立单一接口, 不要建立庞大臃肿的接口</li>
+<li>尽量细化接口, 接口中的方法尽量少</li>
+<li>但是也要有限度</li>
+</ul>
+<h3 id="迪米特法则">迪米特法则</h3>
+<ul>
+<li>一个对象应该对其他对象保持最少的了解. 又叫最少知道原则.</li>
+<li>尽量降低类与类之间的耦合</li>
+</ul>
+<h3 id="里氏替换原则">里氏替换原则</h3>
+<ul>
+<li>派生类（子类）对象可以在程式中代替其基类（超类）对象。</li>
+</ul>
+<h3 id="合成复用原则-composite-reuse-principle-crp">合成复用原则 Composite Reuse Principle, CRP</h3>
+<ul>
+<li>尽量使用对象组合，而不是继承来达到复用的目的。也叫：组合/聚合复用原则</li>
+<li>需要慎重使用继承复用</li>
+</ul>
+<h2 id="creational-design-pattern">Creational Design Pattern</h2>
+<h3 id="factory-pattern-工厂模式">Factory Pattern 工厂模式</h3>
+<ul>
+<li>简单工厂: 由一个工厂对象决定创建出哪一种产品类的实例</li>
+</ul>
+<p><img src="./images/2020-01-26-23-28-00.jpg" alt=""></p>
+<ul>
+<li>定义一个创建对象的接口, 但让实现这个接口的类来决定实例化哪个类, 工厂方法让类的实例化推迟到子类中进行</li>
+</ul>
+<p><img src="./images/2020-01-26-23-28-20.jpg" alt=""></p>
+<h3 id="abstract-factory-pattern-抽象工厂模式">Abstract Factory Pattern 抽象工厂模式</h3>
+<ul>
+<li>提供一个创建一系列相关或者相互依赖对象的接口</li>
+<li>无需指定他们具体的类</li>
+<li>便于创建产品族, 而工厂模式侧重于创建产品等级</li>
+</ul>
+<p><img src="./images/2020-01-26-23-28-30.jpg" alt=""></p>
+<p><img src="./images/2020-01-26-23-28-39.jpg" alt=""></p>
+<h3 id="singleton-pattern-单例模式">Singleton Pattern 单例模式</h3>
+<ul>
+<li>保证一个类仅有一个实例, 并提供一个全局访问点</li>
+<li>私有构造器</li>
+<li>线程安全</li>
+<li>延迟加载</li>
+<li>序列化和反序列化</li>
+<li>反射</li>
+</ul>
+<h3 id="prototype-pattern-原型模式">Prototype Pattern 原型模式</h3>
+<ul>
+<li>指原型实例指定创建对象的种类, 并且通过Copy这些原型创建新的对象</li>
+<li>注意深克隆和浅克隆</li>
+</ul>
+<h3 id="builder-pattern-建造者模式">Builder Pattern 建造者模式</h3>
+<ul>
+<li>将一个复杂对象的构建, 与它的表示分离, 使得同样的构建过程可以创建不同的表示</li>
+<li>用户只需指定需要建造的类型就可以得到它们, 建造过程及细节不需要知道</li>
+</ul>
+<p><img src="./images/2020-01-26-23-28-54.jpg" alt=""></p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/design-patterns/" rel="tag">Design Patterns</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Y J avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Y J</span>
+	</div>
+	<div class="authorbox__description">
+		A Java Backend Developer.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/post/java-core.html" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Java Core</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/post/aws.html" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">AWS</p></a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 My Blog.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

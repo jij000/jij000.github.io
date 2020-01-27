@@ -72,15 +72,27 @@
   </url>
   
   <url>
-    <loc>https://jij000.github.io/tags/aws.html</loc>
-  </url>
-  
-  <url>
     <loc>https://jij000.github.io/categories/aws.html</loc>
   </url>
   
   <url>
+    <loc>https://jij000.github.io/tags/aws.html</loc>
+  </url>
+  
+  <url>
     <loc>https://jij000.github.io/post/aws.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/tags/design-patterns.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/categories/design-patterns.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/post/design-patterns.html</loc>
   </url>
   
   <url>
@@ -89,6 +101,14 @@
   
   <url>
     <loc>https://jij000.github.io/post/java-core.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/tags/jvm.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://jij000.github.io/post/jvm.html</loc>
   </url>
   
   <url>
