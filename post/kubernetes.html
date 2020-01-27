@@ -116,53 +116,66 @@
 	<div class="toc__menu">
 		<nav id="TableOfContents">
   <ul>
-    <li><a href="#coredns">CoreDNS</a></li>
-    <li><a href="#dashboard">Dashboard</a></li>
-    <li><a href="#ingress">INGRESS</a></li>
-    <li><a href="#fedetation">FEDETATION</a></li>
-    <li><a href="#prometheus">Prometheus</a></li>
-    <li><a href="#elk">ELK</a></li>
+    <li><a href="#架构图">架构图</a></li>
+    <li><a href="#kubectl">kubectl</a></li>
+    <li><a href="#etcd">etcd</a></li>
+    <li><a href="#api-server">api server</a></li>
+    <li><a href="#controllermanager">ControllerManager</a></li>
+    <li><a href="#scheduler">Scheduler</a></li>
+    <li><a href="#kubelet">kubelet</a></li>
+    <li><a href="#kube-proxy">kube-proxy</a></li>
+    <li><a href="#pod">Pod</a></li>
+    <li><a href="#其他插件">其他插件</a>
+      <ul>
+        <li><a href="#coredns">CoreDNS</a></li>
+        <li><a href="#dashboard">Dashboard</a></li>
+        <li><a href="#ingress">INGRESS</a></li>
+        <li><a href="#fedetation">FEDETATION</a></li>
+        <li><a href="#prometheus">Prometheus</a></li>
+        <li><a href="#elk">ELK</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 	</div>
 </div>
 <div class="content post__content clearfix">
 			<p><a href="https://k.i4t.com/">详细教程</a></p>
-<h1 id="架构图">架构图</h1>
+<h2 id="架构图">架构图</h2>
 <p><img src="./images/1579624919628.png" alt="enter description here"></p>
-<h1 id="kubectl">kubectl</h1>
+<h2 id="kubectl">kubectl</h2>
 <p>命令行控制工具</p>
-<h1 id="etcd">etcd</h1>
+<h2 id="etcd">etcd</h2>
 <p>key value 数据库, 存储集群所有重要配置信息(持久化)</p>
-<h1 id="api-server">api server</h1>
+<h2 id="api-server">api server</h2>
 <p>所有服务的统一访问入口</p>
-<h1 id="controllermanager">ControllerManager</h1>
+<h2 id="controllermanager">ControllerManager</h2>
 <p>维持副本期望数</p>
-<h1 id="scheduler">Scheduler</h1>
+<h2 id="scheduler">Scheduler</h2>
 <p>负责接受任务, 选择合适节点进行分配任务</p>
-<h1 id="kubelet">kubelet</h1>
+<h2 id="kubelet">kubelet</h2>
 <p>直接跟容器引擎交互, 实现容器的生命周期管理</p>
-<h1 id="kube-proxy">kube-proxy</h1>
+<h2 id="kube-proxy">kube-proxy</h2>
 <p>负责写入规则至 IPTABLES, IPVS实现服务映射访问</p>
-<h1 id="pod">Pod</h1>
+<h2 id="pod">Pod</h2>
 <p>运行容器, 可运行多个
 所有Pod在一个可直接连通的扁平的网络空间中</p>
 <ul>
 <li>自主式Pod</li>
 <li>控制器管理的Pod</li>
 </ul>
-<h1 id="其他插件">其他插件</h1>
-<h2 id="coredns">CoreDNS</h2>
+<h2 id="其他插件">其他插件</h2>
+<h3 id="coredns">CoreDNS</h3>
 <p>可以为集群中的SVC创建一个域名IP的对应关系解析</p>
-<h2 id="dashboard">Dashboard</h2>
+<h3 id="dashboard">Dashboard</h3>
 <p>给K8S集群一个B/S访问体系</p>
-<h2 id="ingress">INGRESS</h2>
+<h3 id="ingress">INGRESS</h3>
 <p>官方只能实现四层代理, INGRESS实现七层代理</p>
-<h2 id="fedetation">FEDETATION</h2>
+<h3 id="fedetation">FEDETATION</h3>
 <p>跨集群中心, 多K8S统一管理</p>
-<h2 id="prometheus">Prometheus</h2>
+<h3 id="prometheus">Prometheus</h3>
 <p>K8S集群监控</p>
-<h2 id="elk">ELK</h2>
+<h3 id="elk">ELK</h3>
 <p>K8S集群日志统一分析接入平台</p>
 
 		</div>
