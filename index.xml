@@ -22,6 +22,16 @@ docker pull nginx # 拉取镜像docker run -d -p 8080:80 nginx # 运行容器, 
     </item>
     
     <item>
+      <title>Hibernate</title>
+      <link>https://jij000.github.io/post/hibernate.html</link>
+      <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/post/hibernate.html</guid>
+      <description>Transaction isolation levels https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/ A transaction isolation level is defined by the following phenomena –
+ Dirty Read – A Dirty read is the situation when a transaction reads a data that has not yet been committed. For example, Let’s say transaction 1 updates a row and leaves it uncommitted, meanwhile, Transaction 2 reads the updated row. If transaction 1 rolls back the change, transaction 2 will have read data that is considered never to have existed.</description>
+    </item>
+    
+    <item>
       <title>Kubernetes</title>
       <link>https://jij000.github.io/post/kubernetes.html</link>
       <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
