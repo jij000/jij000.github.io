@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spring Boot on My Blog</title>
+    <link>https://jij000.github.io/tags/spring-boot.html</link>
+    <description>Recent content in Spring Boot on My Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 27 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jij000.github.io/tags/spring-boot/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spring Boot</title>
+      <link>https://jij000.github.io/post/spring-boot.html</link>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/post/spring-boot.html</guid>
+      <description>CommandLineRunner  当SpringApplication启动后，我们希望执行某些代码，这是可以通过实现ApplicationRunner或CommandLineRunner接口来实现我们的需求。两个接口的工作方式相同，并且都提供了一个run方法，该方法将在SpringApplication.run(…​)完成之后被调用。  @SpringBootApplicationpublic class SampleSimpleApplication implements CommandLineRunner {@Overridepublic void run(String... args) { // 执行完main 后会执行这个方法 System.out.println(&amp;#34;hello world&amp;#34;);}public static void main(String[] args) throws Exception {SpringApplication.run(SampleSimpleApplication.class, args);}} 当有多个CommandLineRunner的实现时，可以通过实现　Ordered接口来定义调用顺序。代码如下。  import org.springframework.boot.CommandLineRunner;import org.springframework.core.Ordered;import org.springframework.stereotype.Component;@Componentpublic class HelloCommandLine implements CommandLineRunner,Ordered{@Overridepublic void run(String... args) throws Exception {System.out.println(this.getClass().getName());}@Overridepublic int getOrder() {return 11; // 数字越小优先执行 }}</description>
+    </item>
+    
+  </channel>
+</rss>

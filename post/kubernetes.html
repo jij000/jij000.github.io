@@ -11,8 +11,8 @@
 <meta property="og:description" content="Kubernetes Note" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://jij000.github.io/post/kubernetes.html" />
-<meta property="article:published_time" content="2017-08-21T00:00:00+00:00" />
-<meta property="article:modified_time" content="2017-08-21T00:00:00+00:00" />
+<meta property="article:published_time" content="2020-01-21T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-01-21T00:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Kubernetes"/>
@@ -98,6 +98,13 @@
 				
 			</a>
 		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/spring-boot.html">
+				
+				<span class="menu__text">Spring Boot</span>
+				
+			</a>
+		</li>
 	</ul>
 </nav>
 
@@ -113,7 +120,7 @@
 			<div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2017-08-21T00:00:00">2017-08-21</time>
+	<time class="meta__text" datetime="2020-01-21T00:00:00">2020-01-21</time>
 </div>
 
 <div class="meta__item-categories meta__item">
@@ -154,12 +161,16 @@
 	</div>
 </div>
 <div class="content post__content clearfix">
-			<p><a href="https://k.i4t.com/">详细教程</a></p>
+			<p><a href="https://kubernetes.io/docs/setup/learning-environment/minikube/">https://kubernetes.io/docs/setup/learning-environment/minikube/</a>
+<a href="https://kubernetes.feisky.xyz/">Kubernetes 指南</a>
+<a href="https://k.i4t.com/">详细教程</a></p>
 <h2 id="架构图">架构图</h2>
 <p><img src="./images/1579624919628.png" alt="enter description here"></p>
 <h2 id="kubectl">kubectl</h2>
 <p>命令行控制工具</p>
-<h2 id="etcd">etcd</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># Health Check</span>
+kubectl cluster-info
+</code></pre></div><h2 id="etcd">etcd</h2>
 <p>key value 数据库, 存储集群所有重要配置信息(持久化)</p>
 <h2 id="api-server">api server</h2>
 <p>所有服务的统一访问入口</p>
@@ -183,8 +194,21 @@
 <p>可以为集群中的SVC创建一个域名IP的对应关系解析</p>
 <h3 id="dashboard">Dashboard</h3>
 <p>给K8S集群一个B/S访问体系</p>
-<h3 id="ingress">INGRESS</h3>
-<p>官方只能实现四层代理, INGRESS实现七层代理</p>
+<h4 id="deploying-the-dashboard-ui">Deploying the Dashboard UI</h4>
+<p>The Dashboard UI is not deployed by default. To deploy it, run the following command:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># 安装 Dashboard</span>
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.0.0-beta8/aio/deploy/recommended.yaml
+<span style="color:#75715e"># 启动 Dashboard</span>
+kubectl proxy
+</code></pre></div><h4 id="给dashboard创建用户">给Dashboard创建用户</h4>
+<p><a href="https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md">https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md</a>
+For Powershell:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">kubectl -n kubernetes-dashboard describe secret <span style="color:#66d9ef">$(</span>kubectl -n kubernetes-dashboard get secret | sls admin-user | ForEach-Object <span style="color:#f92672">{</span> $_ -Split <span style="color:#e6db74">&#39;\s+&#39;</span> <span style="color:#f92672">}</span> | Select -First 1<span style="color:#66d9ef">)</span>
+</code></pre></div><p>记下token</p>
+<pre><code>eyJhbGciOiJSUzI1NiIsImtpZCI6InRsa01aUUYxbUxhNUozcUJJOUJIMWpiTE82dFN3Wl9wQzZDVUhsMlhPWEUifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJrdWJlcm5ldGVzLWRhc2hib2FyZC10b2tlbi05bGptdCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50Lm5hbWUiOiJrdWJlcm5ldGVzLWRhc2hib2FyZCIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VydmljZS1hY2NvdW50LnVpZCI6IjE0NzYxMjg4LTRhODItNDBmNy1iZWFkLTgxMDczNDBlZjk2ZCIsInN1YiI6InN5c3RlbTpzZXJ2aWNlYWNjb3VudDprdWJlcm5ldGVzLWRhc2hib2FyZDprdWJlcm5ldGVzLWRhc2hib2FyZCJ9.zCt2BNvrtMthx1Q4eRihnk_mabBMsXsa9Vejb-xQrfLhvl3efAA95wI4sGE_N5-FgTfJFV7QmZ8DTListQi8X8ktTdQ8DXL2PM6uP3td-uGYpwaeI5mCRqTQQzWocP5gBF4HoIAlPqRQAu2oGJpgo-YZ9tli3NTLYgU38splk_22lcQ99Ivv-s14pV8Lu7RBT7LnJoJ5zhk11nD9Ew5huOtcB6xpYZnTdzoDgFGBcHN6IzHL_Y1qgdH7L83dMCXjMdNk5y8EUVWL_LO3SSzDfJQf0F52SZn5di6zIh4L4qZ4lO4xPKjFQTiNJ5xceCTwJhRZ629mPokmrz1SJK-W0g
+</code></pre><h3 id="ingress">INGRESS</h3>
+<p>允许应用程序从外部被访问
+官方只能实现四层代理, INGRESS实现七层代理</p>
 <h3 id="fedetation">FEDETATION</h3>
 <p>跨集群中心, 多K8S统一管理</p>
 <h3 id="prometheus">Prometheus</h3>

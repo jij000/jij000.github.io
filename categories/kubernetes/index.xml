@@ -6,7 +6,7 @@
     <description>Recent content in Kubernetes on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 21 Aug 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 21 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jij000.github.io/categories/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,12 +14,12 @@
     <item>
       <title>Kubernetes</title>
       <link>https://jij000.github.io/post/kubernetes.html</link>
-      <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://jij000.github.io/post/kubernetes.html</guid>
-      <description>详细教程
+      <description>https://kubernetes.io/docs/setup/learning-environment/minikube/ Kubernetes 指南 详细教程
 架构图 kubectl 命令行控制工具
-etcd key value 数据库, 存储集群所有重要配置信息(持久化)
+# Health Checkkubectl cluster-infoetcd key value 数据库, 存储集群所有重要配置信息(持久化)
 api server 所有服务的统一访问入口
 ControllerManager 维持副本期望数
 Scheduler 负责接受任务, 选择合适节点进行分配任务
@@ -28,10 +28,8 @@ kube-proxy 负责写入规则至 IPTABLES, IPVS实现服务映射访问
 Pod 运行容器, 可运行多个 所有Pod在一个可直接连通的扁平的网络空间中
  自主式Pod 控制器管理的Pod  其他插件 CoreDNS 可以为集群中的SVC创建一个域名IP的对应关系解析
 Dashboard 给K8S集群一个B/S访问体系
-INGRESS 官方只能实现四层代理, INGRESS实现七层代理
-FEDETATION 跨集群中心, 多K8S统一管理
-Prometheus K8S集群监控
-ELK K8S集群日志统一分析接入平台</description>
+Deploying the Dashboard UI The Dashboard UI is not deployed by default. To deploy it, run the following command:
+# 安装 Dashboardkubectl apply -f https://raw.</description>
     </item>
     
   </channel>

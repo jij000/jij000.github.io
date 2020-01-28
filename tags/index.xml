@@ -6,10 +6,19 @@
     <description>Recent content in Tags on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 26 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 27 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jij000.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Spring Boot</title>
+      <link>https://jij000.github.io/tags/spring-boot.html</link>
+      <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/tags/spring-boot.html</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Docker</title>
@@ -32,7 +41,7 @@
     <item>
       <title>Kubernetes</title>
       <link>https://jij000.github.io/tags/kubernetes.html</link>
-      <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
+      <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://jij000.github.io/tags/kubernetes.html</guid>
       <description></description>

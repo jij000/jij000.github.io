@@ -4,22 +4,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Docker - My Blog</title>
+	<title>Spring Boot - My Blog</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-	<meta property="og:title" content="Docker" />
+	<meta property="og:title" content="Spring Boot" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://jij000.github.io/categories/docker.html" />
-<meta property="og:updated_time" content="2020-01-26T00:00:00+00:00" />
+<meta property="og:url" content="https://jij000.github.io/tags/spring-boot.html" />
+<meta property="og:updated_time" content="2020-01-27T00:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Docker"/>
+<meta name="twitter:title" content="Spring Boot"/>
 <meta name="twitter:description" content=""/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="alternate" type="application/rss+xml" href="/categories/docker/index.xml" title="My Blog">
+	<link rel="alternate" type="application/rss+xml" href="/tags/spring-boot/index.xml" title="My Blog">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 	<link rel="stylesheet" href="/css/style.css">
 	
@@ -115,33 +115,33 @@
 			
 <main class="main list" role="main">
 	<header class="main__header">
-		<h1 class="main__title">Docker</h1>
+		<h1 class="main__title">Spring Boot</h1>
 	</header><article class="list__item post">
 	<figure class="list__thumbnail">
-		<a href="https://jij000.github.io/post/docker.html">
-			<img src="/Thumbnail/Docker_logo_011.0.png" alt="Docker" />
+		<a href="https://jij000.github.io/post/spring-boot.html">
+			<img src="/Thumbnail/spring-logo-png-4.png" alt="Spring Boot" />
 		</a>
 	</figure>
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/docker.html" rel="bookmark">
-			Docker
+			<a href="/post/spring-boot.html" rel="bookmark">
+			Spring Boot
 			</a>
 		</h3>
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2020-01-26T00:00:00">2020-01-26</time>
+	<time class="meta__text" datetime="2020-01-27T00:00:00">2020-01-27</time>
 </div>
 
 <div class="meta__item-categories meta__item">
 	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/docker.html" rel="category">Docker</a>
+	<span class="meta__text"><a class="meta__link" href="/categories/spring-boot.html" rel="category">Spring Boot</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		常用命令 docker pull nginx # 拉取镜像docker run -d -p 8080:80 nginx # 运行容器, -d 后台运行, -p 主机端口 : 容器端口 做映射docker run -d -P nginx # 运行容器, -d 后台运行, -P 容器的所有端口和主机随机的端口映射, docker ps 可以看到映射的情况docker images # 查看现有镜像docker ps # 查看正在运行的容器docker run --help # 查看帮助docker exec --help # 进入容器内部docker exec -it 03 bash # 进入容器内部, 打开一个容器终端, 03是容器id的开头部分exit # 退出容器终端docker stop 1f #关闭容器docker restart 1f #重启容器which nginx # 查找nginx的安装位置netstat -na|grep 8888 # 查找端口状态uname -a # 查看系统版本制作镜像 Dockerfile
+		CommandLineRunner  当SpringApplication启动后，我们希望执行某些代码，这是可以通过实现ApplicationRunner或CommandLineRunner接口来实现我们的需求。两个接口的工作方式相同，并且都提供了一个run方法，该方法将在SpringApplication.run(…​)完成之后被调用。  @SpringBootApplicationpublic class SampleSimpleApplication implements CommandLineRunner {@Overridepublic void run(String... args) { // 执行完main 后会执行这个方法 System.out.println(&#34;hello world&#34;);}public static void main(String[] args) throws Exception {SpringApplication.run(SampleSimpleApplication.class, args);}} 当有多个CommandLineRunner的实现时，可以通过实现　Ordered接口来定义调用顺序。代码如下。  import org.springframework.boot.CommandLineRunner;import org.springframework.core.Ordered;import org.springframework.stereotype.Component;@Componentpublic class HelloCommandLine implements CommandLineRunner,Ordered{@Overridepublic void run(String... args) throws Exception {System.out.println(this.getClass().getName());}@Overridepublic int getOrder() {return 11; // 数字越小优先执行 }}
 	</div>
 </article>
 </main>

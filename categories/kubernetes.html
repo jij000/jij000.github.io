@@ -11,7 +11,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jij000.github.io/categories/kubernetes.html" />
-<meta property="og:updated_time" content="2017-08-21T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-01-21T00:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Kubernetes"/>
@@ -98,6 +98,13 @@
 				
 			</a>
 		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/spring-boot.html">
+				
+				<span class="menu__text">Spring Boot</span>
+				
+			</a>
+		</li>
 	</ul>
 </nav>
 
@@ -124,7 +131,7 @@
 		<div class="list__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2017-08-21T00:00:00">2017-08-21</time>
+	<time class="meta__text" datetime="2020-01-21T00:00:00">2020-01-21</time>
 </div>
 
 <div class="meta__item-categories meta__item">
@@ -134,9 +141,9 @@
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		详细教程
+		https://kubernetes.io/docs/setup/learning-environment/minikube/ Kubernetes 指南 详细教程
 架构图 kubectl 命令行控制工具
-etcd key value 数据库, 存储集群所有重要配置信息(持久化)
+# Health Checkkubectl cluster-infoetcd key value 数据库, 存储集群所有重要配置信息(持久化)
 api server 所有服务的统一访问入口
 ControllerManager 维持副本期望数
 Scheduler 负责接受任务, 选择合适节点进行分配任务
@@ -145,10 +152,8 @@ kube-proxy 负责写入规则至 IPTABLES, IPVS实现服务映射访问
 Pod 运行容器, 可运行多个 所有Pod在一个可直接连通的扁平的网络空间中
  自主式Pod 控制器管理的Pod  其他插件 CoreDNS 可以为集群中的SVC创建一个域名IP的对应关系解析
 Dashboard 给K8S集群一个B/S访问体系
-INGRESS 官方只能实现四层代理, INGRESS实现七层代理
-FEDETATION 跨集群中心, 多K8S统一管理
-Prometheus K8S集群监控
-ELK K8S集群日志统一分析接入平台
+Deploying the Dashboard UI The Dashboard UI is not deployed by default. To deploy it, run the following command:
+# 安装 Dashboardkubectl apply -f https://raw.
 	</div>
 </article>
 </main>
@@ -169,11 +174,11 @@ ELK K8S集群日志统一分析接入平台
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/spring-boot.html">Spring Boot</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/docker.html">Docker</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/hibernate.html">Hibernate</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/kubernetes.html">Kubernetes</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/aws.html">AWS</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/design-patterns.html">Design Patterns</a></li>
 		</ul>
 	</div>
 </div>
@@ -199,6 +204,9 @@ ELK K8S集群日志统一分析接入平台
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/kubernetes.html">Kubernetes</a>
 			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/spring-boot.html">Spring Boot</a>
+			</li>
 		</ul>
 	</div>
 </div>
@@ -212,6 +220,7 @@ ELK K8S集群日志统一分析接入平台
 		<a class="widget-taglist__link widget__link btn" href="/tags/hibernate.html" title="Hibernate">Hibernate</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/jvm.html" title="JVM">JVM</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes.html" title="Kubernetes">Kubernetes</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/spring-boot.html" title="Spring Boot">Spring Boot</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/test.html" title="Test">Test</a>
 	</div>
 </div>

@@ -18,7 +18,8 @@
       <guid>https://jij000.github.io/post/aws.html</guid>
       <description>EC2 虚拟主机
 S3 存储
-Lambda 函数计算服务, 无状态</description>
+Lambda 函数计算服务, 无状态
+EKS Amazon Elastic Kubernetes Service</description>
     </item>
     
   </channel>
