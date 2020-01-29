@@ -11,7 +11,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jij000.github.io/post.html" />
-<meta property="og:updated_time" content="2020-01-27T00:00:00+00:00" />
+<meta property="og:updated_time" content="2020-01-29T00:00:00+00:00" />
 
 	<meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Posts"/>
@@ -64,6 +64,13 @@
 			</a>
 		</li>
 		<li class="menu__item">
+			<a class="menu__link" href="/post/ejb.html">
+				
+				<span class="menu__text">EJB</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
 			<a class="menu__link" href="/post/hibernate.html">
 				
 				<span class="menu__text">Hibernate</span>
@@ -74,6 +81,13 @@
 			<a class="menu__link" href="/post/java-core.html">
 				
 				<span class="menu__text">Java Core</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/jenkins.html">
+				
+				<span class="menu__text">Jenkins</span>
 				
 			</a>
 		</li>
@@ -99,6 +113,13 @@
 			</a>
 		</li>
 		<li class="menu__item">
+			<a class="menu__link" href="/post/soap.html">
+				
+				<span class="menu__text">SOAP</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
 			<a class="menu__link" href="/post/spring-boot.html">
 				
 				<span class="menu__text">Spring Boot</span>
@@ -117,6 +138,29 @@
 	<header class="main__header">
 		<h1 class="main__title">Posts</h1>
 	</header><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/soap.html" rel="bookmark">
+			SOAP
+			</a>
+		</h3>
+		<div class="list__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-01-29T00:00:00">2020-01-29</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/soap.html" rel="category">SOAP</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		SOAP (Simple Object Access Protocol) https://searchapparchitecture.techtarget.com/definition/SOAP-Simple-Object-Access-Protocol
+ SOAP 基于 XML 格式, 使用Http发送(或者其他网络协议) REST 可以用各种格式, 只用HTTP传输, 使用GET, PUT, POST and DELETE 方法来区分数据的操作  
+	</div>
+</article><article class="list__item post">
 	<figure class="list__thumbnail">
 		<a href="https://jij000.github.io/post/spring-boot.html">
 			<img src="/Thumbnail/spring-logo-png-4.png" alt="Spring Boot" />
@@ -281,6 +325,26 @@ EKS Amazon Elastic Kubernetes Service
 		Principle 原则 开闭原则  一个软件实体, 如类, 模块, 函数, 应该对扩展开放, 对修改关 面对抽象, 接口编程  依赖倒置原则  高层模块不应该依赖低层模块, 二者都应该依赖其抽象 抽象不应该依赖细节; 细节应该依赖抽象 针对接口编程, 不要针对实现编程  单一职责原则  不要存在多于一个导致类变更的原因 一个类/接口/方法只负责一项职责  接口隔离原则  用多个专门的接口, 而不使用单一的总接口, 客户端不应该依赖它不需要的接口 一个类对一个类的依赖应该建立在最小的接口上 建立单一接口, 不要建立庞大臃肿的接口 尽量细化接口, 接口中的方法尽量少 但是也要有限度  迪米特法则  一个对象应该对其他对象保持最少的了解. 又叫最少知道原则. 尽量降低类与类之间的耦合  里氏替换原则  派生类（子类）对象可以在程式中代替其基类（超类）对象。  合成复用原则 Composite Reuse Principle, CRP  尽量使用对象组合，而不是继承来达到复用的目的。也叫：组合/聚合复用原则 需要慎重使用继承复用  Creational Design Pattern Factory Pattern 工厂模式  简单工厂: 由一个工厂对象决定创建出哪一种产品类的实例   定义一个创建对象的接口, 但让实现这个接口的类来决定实例化哪个类, 工厂方法让类的实例化推迟到子类中进行  Abstract Factory Pattern 抽象工厂模式  提供一个创建一系列相关或者相互依赖对象的接口 无需指定他们具体的类 便于创建产品族, 而工厂模式侧重于创建产品等级  Singleton Pattern 单例模式  保证一个类仅有一个实例, 并提供一个全局访问点 私有构造器 线程安全 延迟加载 序列化和反序列化 反射  Prototype Pattern 原型模式  指原型实例指定创建对象的种类, 并且通过Copy这些原型创建新的对象 注意深克隆和浅克隆  Builder Pattern 建造者模式  将一个复杂对象的构建, 与它的表示分离, 使得同样的构建过程可以创建不同的表示 用户只需指定需要建造的类型就可以得到它们, 建造过程及细节不需要知道  
 	</div>
 </article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/ejb.html" rel="bookmark">
+			EJB
+			</a>
+		</h3>
+		<p class="list__lead post__lead">Example lead - highlighted near the title</p>
+		<div class="list__meta meta">
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/ejb.html" rel="category">EJB</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		参考资料 EJB到底是什么，真的那么神秘吗？？ EJB Tutorial
+EJB 概念  将业务逻辑从客户端软件中抽取出来，封装在一个组件中。这个组件运行在一个独立的服务器上，客户端软件通过网络调用组件提供的服务以实现业务逻辑，而客户端软件的功能单纯到只负责发送调用请求和显示处理结果。 在J2EE 中，这个运行在一个独立的服务器上，并封装了业务逻辑的组件就是EJB（Enterprise JavaBean）组件。 企业开发的逻辑非常复杂, 将业务逻辑抽取出来, 便于组件复用?  EJB 的实现技术 EJB 是运行在独立服务器上的组件，客户端是通过网络对EJB 对象进行调用的。在Java中，能够实现远程对象调用的技术是RMI，而EJB 技术基础正是RMI。通过RMI 技术，J2EE将EJB 组件创建为远程对象，客户端就可以通过网络调用EJB 对象了。
+RMI RMI 英文全称是&quot;Remote Method Invocation&rdquo;，它的中文名称是&quot;远程方法调用&rdquo;，它就是利用Java 对象序列化的机制实现分布式计算，实现远程类对象的实例化以及调用的方法。
+	</div>
+</article><article class="list__item post">
 	<figure class="list__thumbnail">
 		<a href="https://jij000.github.io/post/java-core.html">
 			<img src="/Thumbnail/dbgxt2rvpd26udoyzcqn.0.0.jpg" alt="Java Core" />
@@ -304,60 +368,30 @@ EKS Amazon Elastic Kubernetes Service
 		Java 多线程 异常处理 BIO,NIO,AIO 有什么区别?  BIO (Blocking I/O): 同步阻塞I/O模式，数据的读取写入必须阻塞在一个线程内等待其完成。在活动连接数不是特别高（小于单机1000）的情况下，这种模型是比较不错的，可以让每一个连接专注于自己的 I/O 并且编程模型简单，也不用过多考虑系统的过载、限流等问题。线程池本身就是一个天然的漏斗，可以缓冲一些系统处理不了的连接或请求。但是，当面对十万甚至百万级连接的时候，传统的 BIO 模型是无能为力的。因此，我们需要一种更高效的 I/O 处理模型来应对更高的并发量。 NIO (New I/O): NIO是一种同步非阻塞的I/O模型，在Java 1.4 中引入了NIO框架，对应 java.nio 包，提供了 Channel , Selector，Buffer等抽象。NIO中的N可以理解为Non-blocking，不单纯是New。它支持面向缓冲的，基于通道的I/O操作方法。 NIO提供了与传统BIO模型中的 Socket 和 ServerSocket 相对应的 SocketChannel 和 ServerSocketChannel 两种不同的套接字通道实现,两种通道都支持阻塞和非阻塞两种模式。阻塞模式使用就像传统中的支持一样，比较简单，但是性能和可靠性都不好；非阻塞模式正好与之相反。对于低负载、低并发的应用程序，可以使用同步阻塞I/O来提升开发速率和更好的维护性；对于高负载、高并发的（网络）应用，应使用 NIO 的非阻塞模式来开发 AIO (Asynchronous I/O): AIO 也就是 NIO 2。在 Java 7 中引入了 NIO 的改进版 NIO 2,它是异步非阻塞的IO模型。异步 IO 是基于事件和回调机制实现的，也就是应用操作之后会直接返回，不会堵塞在那里，当后台处理完成，操作系统会通知相应的线程进行后续的操作。AIO 是异步IO的缩写，虽然 NIO 在网络操作中，提供了非阻塞的方法，但是 NIO 的 IO 行为还是同步的。对于 NIO 来说，我们的业务线程是在 IO 操作准备好时，得到通知，接着就由这个线程自行进行 IO 操作，IO操作本身是同步的。查阅网上相关资料，我发现就目前来说 AIO 的应用还不是很广泛，Netty 之前也尝试使用过 AIO，不过又放弃了。  深拷贝 vs 浅拷贝  浅拷贝：对基本数据类型进行值传递，对引用数据类型进行引用传递般的拷贝，此为浅拷贝。 深拷贝：对基本数据类型进行值传递，对引用数据类型，创建一个新的对象，并复制其内容，此为深拷贝。   
 	</div>
 </article><article class="list__item post">
-	<figure class="list__thumbnail">
-		<a href="https://jij000.github.io/post/jvm.html">
-			<img src="/Thumbnail/dbgxt2rvpd26udoyzcqn.0.0.jpg" alt="JVM" />
-		</a>
-	</figure>
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/jvm.html" rel="bookmark">
-			JVM
+			<a href="/post/jenkins.html" rel="bookmark">
+			Jenkins
 			</a>
 		</h3>
 		<p class="list__lead post__lead">Example lead - highlighted near the title</p>
 		<div class="list__meta meta">
 <div class="meta__item-categories meta__item">
 	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/java.html" rel="category">Java</a>
+	<span class="meta__text"><a class="meta__link" href="/categories/jenkins.html" rel="category">Jenkins</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		JVM Framework reflection 反射 Class Loader GC GC策略 GC算法 JVM运行模式 
-	</div>
-</article><article class="list__item post">
-	<figure class="list__thumbnail">
-		<a href="https://jij000.github.io/post/new-features-in-java8.html">
-			<img src="/Thumbnail/dbgxt2rvpd26udoyzcqn.0.0.jpg" alt="New features in Java 8" />
-		</a>
-	</figure>
-	<header class="list__header">
-		<h3 class="list__title post__title ">
-			<a href="/post/new-features-in-java8.html" rel="bookmark">
-			New features in Java 8
-			</a>
-		</h3>
-		<p class="list__lead post__lead">Example lead - highlighted near the title</p>
-		<div class="list__meta meta">
-<div class="meta__item-categories meta__item">
-	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/java.html" rel="category">Java</a>
-	</span>
-</div></div>
-	</header>
-	<div class="content list__excerpt post__content clearfix">
-		Lambda 表达式 Lambda允许把函数作为一个方法的参数（函数作为参数传递进方法中。
-方法引用 方法引用提供了非常有用的语法，可以直接引用已有Java类或对象（实例）的方法或构造器。与lambda联合使用，方法引用可以使语言的构造更紧凑简洁，减少冗余代码。
-默认方法 默认方法就是一个在接口里面有了一个实现的方法。
-Stream API 新添加的Stream API（java.util.stream） 把真正的函数式编程风格引入到Java中。
-Date Time API 加强对日期与时间的处理。
-Optional 类 Optional 类已经成为 Java 8 类库的一部分，用来解决空指针异常。
-新工具 新的编译工具，如：Nashorn引擎 jjs、 类依赖分析器jdeps。
-Nashorn, JavaScript 引擎 Java 8提供了一个新的Nashorn javascript引擎，它允许我们在JVM上运行特定的javascript应用。
+		安装 # 从docker安装docker run -d -u root --name jenkins \ -p 8080:8080 -p 50000:50000 \ -v /root/jenkins_2112:/var/jenkins_home \ jenkins/jenkins:2.112-alpine# 查看admin初始passworddocker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword 安装docker 插件  
 	</div>
 </article>
 </main>
+
+<div class="pagination">
+	<span class="pagination__item pagination__item--current">1/2</span>
+	<a class="pagination__item pagination__item--next btn" href="/post/page/2.html">»</a>
+</div>
 
 
 			</div>
@@ -375,11 +409,11 @@ Nashorn, JavaScript 引擎 Java 8提供了一个新的Nashorn javascript引擎�
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="/post/soap.html">SOAP</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/spring-boot.html">Spring Boot</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/docker.html">Docker</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/hibernate.html">Hibernate</a></li>
 			<li class="widget__item"><a class="widget__link" href="/post/kubernetes.html">Kubernetes</a></li>
-			<li class="widget__item"><a class="widget__link" href="/post/aws.html">AWS</a></li>
 		</ul>
 	</div>
 </div>
@@ -397,13 +431,22 @@ Nashorn, JavaScript 引擎 Java 8提供了一个新的Nashorn javascript引擎�
 				<a class="widget__link" href="/categories/docker.html">Docker</a>
 			</li>
 			<li class="widget__item">
+				<a class="widget__link" href="/categories/ejb.html">EJB</a>
+			</li>
+			<li class="widget__item">
 				<a class="widget__link" href="/categories/hibernate.html">Hibernate</a>
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/java.html">Java</a>
 			</li>
 			<li class="widget__item">
+				<a class="widget__link" href="/categories/jenkins.html">Jenkins</a>
+			</li>
+			<li class="widget__item">
 				<a class="widget__link" href="/categories/kubernetes.html">Kubernetes</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/soap.html">SOAP</a>
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/spring-boot.html">Spring Boot</a>
@@ -418,9 +461,12 @@ Nashorn, JavaScript 引擎 Java 8提供了一个新的Nashorn javascript引擎�
 		<a class="widget-taglist__link widget__link btn" href="/tags/aws.html" title="AWS">AWS</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/design-patterns.html" title="Design Patterns">Design Patterns</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/docker.html" title="Docker">Docker</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/ejb.html" title="EJB">EJB</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/hibernate.html" title="Hibernate">Hibernate</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/jenkins.html" title="Jenkins">Jenkins</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/jvm.html" title="JVM">JVM</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes.html" title="Kubernetes">Kubernetes</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/soap.html" title="SOAP">SOAP</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/spring-boot.html" title="Spring Boot">Spring Boot</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/test.html" title="Test">Test</a>
 	</div>
