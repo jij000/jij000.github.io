@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Kafka - My Blog</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="Kafka Note">
+	<meta property="og:title" content="Kafka" />
+<meta property="og:description" content="Kafka Note" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://jij000.github.io/post/kafka.html" />
+<meta property="article:published_time" content="2020-01-30T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-01-30T00:00:00+00:00" />
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Kafka"/>
+<meta name="twitter:description" content="Kafka Note"/>
+
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+	<link rel="stylesheet" href="/css/style.css">
+	
+	<link rel="shortcut icon" href="/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container">
+		<div class="logo">
+			<a class="logo__link" href="/" title="My Blog" rel="home">
+				<div class="logo__title">My Blog</div>
+				
+			</a>
+		</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="/post/aws.html">
+				
+				<span class="menu__text">AWS</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/design-patterns.html">
+				
+				<span class="menu__text">Design Patterns</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/docker.html">
+				
+				<span class="menu__text">Docker</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/ejb.html">
+				
+				<span class="menu__text">EJB</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/elk.html">
+				
+				<span class="menu__text">ELK</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/hibernate.html">
+				
+				<span class="menu__text">Hibernate</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/java-core.html">
+				
+				<span class="menu__text">Java Core</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/jenkins.html">
+				
+				<span class="menu__text">Jenkins</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/junit.html">
+				
+				<span class="menu__text">Junit</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/jvm.html">
+				
+				<span class="menu__text">JVM</span>
+				
+			</a>
+		</li>
+		<li class="menu__item menu__item--active">
+			<a class="menu__link" href="/post/kafka.html">
+				
+				<span class="menu__text">Kafka</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/keywords-chinese-english.html">
+				
+				<span class="menu__text">Keywords (Chinese-English)</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/kubernetes.html">
+				
+				<span class="menu__text">Kubernetes</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/new-features-in-java8.html">
+				
+				<span class="menu__text">New features in Java 8</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/soap.html">
+				
+				<span class="menu__text">SOAP</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/spring-boot.html">
+				
+				<span class="menu__text">Spring Boot</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="/post/the-process-of-creating-a-blog-system.html">
+				
+				<span class="menu__text">The process of creating a blog system</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Kafka</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
+	<time class="meta__text" datetime="2020-01-30T00:00:00">2020-01-30</time>
+</div>
+
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/kafka.html" rel="category">Kafka</a>
+	</span>
+</div></div>
+		</header>
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#kafka入门">Kafka入门</a>
+      <ul>
+        <li><a href="#生产者--消费者">生产者 & 消费者</a></li>
+        <li><a href="#topic">topic</a></li>
+        <li><a href="#partition">Partition</a></li>
+        <li><a href="#broker">Broker</a></li>
+        <li><a href="#备份">备份</a></li>
+        <li><a href="#高可用">高可用</a></li>
+        <li><a href="#消费者组">消费者组</a></li>
+        <li><a href="#消费者高速读-少做了一步拷贝">消费者高速读, 少做了一步拷贝</a></li>
+        <li><a href="#offset">offset</a></li>
+        <li><a href="#最后总结">最后总结</a></li>
+        <li><a href="#注意学习配置">注意学习配置</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div>
+<div class="content post__content clearfix">
+			<p><a href="https://yq.aliyun.com/articles/31546">https://yq.aliyun.com/articles/31546</a>
+<a href="https://segmentfault.com/a/1190000020512524">【笔记】Apache kafka实战 【快速入门】</a>
+<a href="https://www.zhihu.com/question/56172498/answer/922563095">Kafka入门</a>
+<a href="https://github.com/ZhongFuCheng3y/3y">https://github.com/ZhongFuCheng3y/3y</a></p>
+<h2 id="kafka入门">Kafka入门</h2>
+<p><img src="./images/2020-01-30-14-20-42.jpg" alt=""></p>
+<h3 id="生产者--消费者">生产者 &amp; 消费者</h3>
+<p>Kafka是一个消息队列，把消息放到队列里边的叫<strong>生产者</strong>，从队列里边消费的叫<strong>消费者</strong>。</p>
+<p><img src="./images/2020-01-30-14-22-04.jpg" alt=""></p>
+<h3 id="topic">topic</h3>
+<p>一个消息中间件，队列不单单只有一个，我们往往会有多个队列，而我们生产者和消费者就得知道：把数据丢给哪个队列，从哪个队列消息。我们需要给队列取名字，叫做<strong>topic</strong>(相当于数据库里边表的概念)</p>
+<p><img src="./images/2020-01-30-14-22-54.jpg" alt="">
+现在我们给队列取了名字以后，生产者就知道往哪个队列丢数据了，消费者也知道往哪个队列拿数据了。我们可以有多个生产者往**同一个队列(topic)<strong>丢数据，多个消费者往</strong>同一个队列(topic)**拿数据</p>
+<p><img src="./images/2020-01-30-14-23-32.jpg" alt=""></p>
+<h3 id="partition">Partition</h3>
+<p>为了提高一个队列(topic)的<strong>吞吐量</strong>，Kafka会把topic进行<strong>分区(Partition)</strong></p>
+<p><img src="./images/2020-01-30-14-23-48.jpg" alt="">
+所以，生产者实际上是往一个topic名为Java3y中的分区(Partition)丢数据，消费者实际上是往一个topic名为Java3y的分区(Partition)取数据</p>
+<p><img src="./images/2020-01-30-14-24-18.jpg" alt=""></p>
+<h3 id="broker">Broker</h3>
+<p>一台Kafka服务器叫做<strong>Broker</strong>，Kafka集群就是多台Kafka服务器：</p>
+<p><img src="./images/2020-01-30-14-24-40.jpg" alt="">
+一个topic会分为多个partition，实际上partition会分布在不同的broker中，举个例子：</p>
+<p><img src="./images/2020-01-30-14-24-58.jpg" alt="">
+由此得知：Kafka是天然<strong>分布式</strong>的。</p>
+<h3 id="备份">备份</h3>
+<p>现在我们已经知道了往topic里边丢数据，实际上这些数据会分到不同的partition上，这些partition存在不同的broker上。分布式肯定会带来问题：“万一其中一台broker(Kafka服务器)出现网络抖动或者挂了，怎么办？”Kafka是这样做的：我们数据存在不同的partition上，那kafka就把这些partition做<strong>备份</strong>。比如，现在我们有三个partition，分别存在三台broker上。每个partition都会备份，这些备份散落在不同的broker上。</p>
+<p><img src="./images/2020-01-30-14-26-18.jpg" alt="">
+红色块的partition代表的是<strong>主分区</strong>，紫色的partition块代表的是<strong>备份分区</strong>。生产者往topic丢数据，是与主分区交互，消费者消费topic的数据，也是与主分区交互。</p>
+<h3 id="高可用">高可用</h3>
+<p><strong>备份分区仅仅用作于备份，不做读写</strong>。如果某个Broker挂了，那就会选举出其他Broker的partition来作为主分区，这就实现了<strong>高可用</strong>。
+另外值得一提的是：当生产者把数据丢进topic时，我们知道是写在partition上的，那partition是怎么将其持久化的呢？（不持久化如果Broker中途挂了，那肯定会丢数据嘛)。Kafka是将partition的数据写在磁盘的(消息日志)，不过Kafka只允许追加写入(顺序访问)，避免缓慢的随机 I/O 操作。</p>
+<ul>
+<li>Kafka也不是partition一有数据就立马将数据写到磁盘上，它会先<strong>缓存</strong>一部分，等到足够多数据量或等待一定的时间再批量<strong>写入(flush)</strong>。
+上面balabala地都是讲生产者把数据丢进topic是怎么样的，下面来讲讲消费者是怎么消费的。既然数据是保存在partition中的，那么消费者实际上也是从partition中取数据。</li>
+</ul>
+<p><img src="./images/2020-01-30-14-29-41.jpg" alt=""></p>
+<h3 id="消费者组">消费者组</h3>
+<p>生产者可以有多个，消费者也可以有多个。像上面图的情况，是一个消费者消费三个分区的数据。多个消费者可以组成一个<strong>消费者组</strong>。</p>
+<p><img src="./images/2020-01-30-14-30-09.jpg" alt="">
+本来是一个消费者消费三个分区的，现在我们有消费者组，就可以<strong>每个消费者去消费一个分区</strong>（也是为了提高吞吐量）</p>
+<p><img src="./images/2020-01-30-14-30-26.jpg" alt="">
+按图上所示的情况，这里想要说明的是：</p>
+<ul>
+<li>如果消费者组中的某个消费者挂了，那么其中一个消费者可能就要消费两个partition了</li>
+<li>如果只有三个partition，而消费者组有4个消费者，那么一个消费者会空闲</li>
+<li>如果多加入一个消费者组，无论是新增的消费者组还是原本的消费者组，都能消费topic的全部数据。（消费者组之间从逻辑上它们是独立的）
+前面讲解到了生产者往topic里丢数据是存在partition上的，而partition持久化到磁盘是IO顺序访问的，并且是先写缓存，隔一段时间或者数据量足够大的时候才批量写入磁盘的。</li>
+</ul>
+<h3 id="消费者高速读-少做了一步拷贝">消费者高速读, 少做了一步拷贝</h3>
+<p>消费者在读的时候也很有讲究：正常的读磁盘数据是需要将内核态数据拷贝到用户态的，而Kafka 通过调用sendfile()直接从内核空间（DMA的）到内核空间（Socket的），<strong>少做了一步拷贝</strong>的操作。</p>
+<p><img src="./images/2020-01-30-14-33-38.jpg" alt="">
+有的同学可能会产生疑问：消费者是怎么知道自己消费到哪里的呀？Kafka不是支持<strong>回溯</strong>吗？那是怎么做的呀？</p>
+<ul>
+<li>比如上面也提到：如果一个消费者组中的某个消费者挂了，那挂掉的消费者所消费的分区可能就由存活的消费者消费。那<strong>存活的消费者是需要知道挂掉的消费者消费到哪了</strong>，不然怎么玩。</li>
+</ul>
+<h3 id="offset">offset</h3>
+<p>这里要引出<strong>offset</strong>了，Kafka就是用offset来表示消费者的消费进度到哪了，每个消费者会都有自己的offset。说白了offset就是表示消费者的<strong>消费进度</strong>。
+在以前版本的Kafka，这个offset是由Zookeeper来管理的，后来Kafka开发者认为Zookeeper不合适大量的删改操作，于是把offset在broker以内部topic(__consumer_offsets)的方式来保存起来。
+每次消费者消费的时候，都会提交这个offset，Kafka可以让你选择是自动提交还是手动提交。
+既然提到了Zookeeper，那就多说一句。Zookeeper虽然在新版的Kafka中没有用作于保存客户端的offset，但是Zookeeper是Kafka一个重要的依赖。</p>
+<ul>
+<li>探测broker和consumer的添加或移除。</li>
+<li>负责维护所有partition的领导者/从属者关系（主分区和备份分区），如果主分区挂了，需要选举出备份分区作为主分区。</li>
+<li>维护topic、partition等元配置信息</li>
+<li>&hellip;.</li>
+</ul>
+<p><img src="./images/2020-01-30-14-36-13.jpg" alt=""></p>
+<h3 id="最后总结">最后总结</h3>
+<p>通过这篇文章，文章开头那几个问题估计多多少少都懂一些啦。我来简要回答一下：</p>
+<ul>
+<li>使用消息队列不可能是单机的（必然是分布式or集群）
+Kafka天然是分布式的，往一个topic丢数据，实际上就是往多个broker的partition存储数据</li>
+<li>数据写到消息队列，可能会存在数据丢失问题，数据在消息队列需要持久化(磁盘？数据库？Redis？分布式文件系统？)
+Kafka会将partition以消息日志的方式(落磁盘)存储起来，通过 顺序访问IO和缓存(等到一定的量或时间)才真正把数据写到磁盘上，来提高速度。</li>
+<li>想要保证消息（数据）是有序的，怎么做？
+Kafka会将数据写到partition，单个partition的写入是有顺序的。如果要保证全局有序，那只能写入一个partition中。如果要消费也有序，消费者也只能有一个。</li>
+<li>为什么在消息队列中重复消费了数据
+凡是分布式就无法避免网络抖动/机器宕机等问题的发生，很有可能消费者A读取了数据，还没来得及消费，就挂掉了。Zookeeper发现消费者A挂了，让消费者B去消费原本消费者A的分区，等消费者A重连的时候，发现已经重复消费同一条数据了。(各种各样的情况，消费者超时等等都有可能&hellip;)
+如果业务上不允许重复消费的问题，最好消费者那端做业务上的校验（如果已经消费过了，就不消费了）</li>
+</ul>
+<h3 id="注意学习配置">注意学习配置</h3>
+<p>这篇文章主要是Kafka入门，Kafka还涉及到别的概念，以及还有别的东西。在我感觉中，很多的面试题都跟配置有关，所以在解决某些问题的时候，先看看能不能通过现有配置解决掉（学多了框架，你就会发现很多官方的就已经支持解决了，你做的可能改改配置/参数就完事了）。</p>
+
+		</div>
+		<footer class="post__footer">
+			
+<div class="post__tags tags clearfix">
+	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
+	<ul class="tags__list">
+		<li class="tags__item"><a class="tags__link btn" href="/tags/kafka/" rel="tag">Kafka</a></li>
+	</ul>
+</div>
+		</footer>
+	</article>
+</main>
+
+<div class="authorbox clearfix">
+	<figure class="authorbox__avatar">
+		<img alt="Y J avatar" src="/img/avatar.png" class="avatar" height="90" width="90">
+	</figure>
+	<div class="authorbox__header">
+		<span class="authorbox__name">About Y J</span>
+	</div>
+	<div class="authorbox__description">
+		A Java Backend Developer.
+	</div>
+</div>
+
+<nav class="post-nav flex">
+	<div class="post-nav__item post-nav__item--prev">
+		<a class="post-nav__link" href="/post/keywords-chinese-english.html" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Keywords (Chinese-English)</p></a>
+	</div>
+	<div class="post-nav__item post-nav__item--next">
+		<a class="post-nav__link" href="/post/the-process-of-creating-a-blog-system.html" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">The process of creating a blog system</p></a>
+	</div>
+</nav>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2020 My Blog.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="/js/menu.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

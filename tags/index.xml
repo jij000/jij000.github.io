@@ -6,10 +6,73 @@
     <description>Recent content in Tags on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jij000.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>blog</title>
+      <link>https://jij000.github.io/tags/blog.html</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/tags/blog.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Junit</title>
+      <link>https://jij000.github.io/tags/junit.html</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/tags/junit.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>English</title>
+      <link>https://jij000.github.io/tags/english.html</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/tags/english.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kafka</title>
+      <link>https://jij000.github.io/tags/kafka.html</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/tags/kafka.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elasticsearch</title>
+      <link>https://jij000.github.io/tags/elasticsearch.html</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/tags/elasticsearch.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kibana</title>
+      <link>https://jij000.github.io/tags/kibana.html</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/tags/kibana.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Logstash</title>
+      <link>https://jij000.github.io/tags/logstash.html</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/tags/logstash.html</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>SOAP</title>

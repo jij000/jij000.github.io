@@ -6,10 +6,55 @@
     <description>Recent content in Categories on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jij000.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>blog</title>
+      <link>https://jij000.github.io/categories/blog.html</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/categories/blog.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Junit</title>
+      <link>https://jij000.github.io/categories/junit.html</link>
+      <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/categories/junit.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>English</title>
+      <link>https://jij000.github.io/categories/english.html</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/categories/english.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Kafka</title>
+      <link>https://jij000.github.io/categories/kafka.html</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/categories/kafka.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ELK</title>
+      <link>https://jij000.github.io/categories/elk.html</link>
+      <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/categories/elk.html</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>SOAP</title>

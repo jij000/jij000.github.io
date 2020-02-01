@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>English on My Blog</title>
+    <link>https://jij000.github.io/tags/english.html</link>
+    <description>Recent content in English on My Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jan 2020 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://jij000.github.io/tags/english/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Keywords (Chinese-English)</title>
+      <link>https://jij000.github.io/post/keywords-chinese-english.html</link>
+      <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/post/keywords-chinese-english.html</guid>
+      <description>   中文 英文     耦合 couple   松耦合 loosely-coupled   紧耦合 close-coupled   解耦 decouple   异步 xxxx   同步 xxxx   削峰 xxxx   限流 xxxx    </description>
+    </item>
+    
+  </channel>
+</rss>
