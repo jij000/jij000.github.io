@@ -192,6 +192,8 @@
     <li><a href="#异常处理">异常处理</a></li>
     <li><a href="#bionioaio-有什么区别">BIO,NIO,AIO 有什么区别?</a></li>
     <li><a href="#深拷贝-vs-浅拷贝">深拷贝 vs 浅拷贝</a></li>
+    <li><a href="#functional-interfaces-in-java">Functional Interfaces In Java</a></li>
+    <li><a href="#optional">Optional</a></li>
   </ul>
 </nav>
 	</div>
@@ -210,11 +212,80 @@
 </ul>
 <h2 id="深拷贝-vs-浅拷贝">深拷贝 vs 浅拷贝</h2>
 <ul>
-<li><strong>浅拷贝</strong>：对基本数据类型进行值传递，对引用数据类型进行引用传递般的拷贝，此为浅拷贝。</li>
-<li><strong>深拷贝</strong>：对基本数据类型进行值传递，对引用数据类型，创建一个新的对象，并复制其内容，此为深拷贝。</li>
-<li><img src="./images/1579630538435.png" alt="enter description here"></li>
+<li>
+<p><strong>浅拷贝</strong>：对基本数据类型进行值传递，对引用数据类型进行引用传递般的拷贝，此为浅拷贝。</p>
+</li>
+<li>
+<p><strong>深拷贝</strong>：对基本数据类型进行值传递，对引用数据类型，创建一个新的对象，并复制其内容，此为深拷贝。</p>
+</li>
+<li>
+<p><img src="./images/1579630538435.png" alt="enter description here"></p>
+</li>
 </ul>
+<h2 id="functional-interfaces-in-java">Functional Interfaces In Java</h2>
+<p><a href="https://www.geeksforgeeks.org/functional-interfaces-java/">https://www.geeksforgeeks.org/functional-interfaces-java/</a></p>
+<ul>
+<li>Functional Interfaces 只能有一个抽象方法 (因为本身就是代表一个方法), 但是可以有multiple default methods</li>
+<li>常见的有 Runnable, ActionListener, Comparable, java.util.function package 里有很多builtin functional interfaces</li>
+<li>@FunctionalInterface annotation is used to ensure an interface can’t have more than one abstract method. The use of this annotation is optional.</li>
+<li>可以用lambda表达式给其赋值</li>
+<li>一个sample:</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// Java program to demonstrate lamda expressions to implement 
+</span><span style="color:#75715e"></span><span style="color:#75715e">// a user defined functional interface. 
+</span><span style="color:#75715e"></span>  
+<span style="color:#a6e22e">@FunctionalInterface</span>
+<span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Square</span> 
+<span style="color:#f92672">{</span> 
+    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">calculate</span><span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> x<span style="color:#f92672">)</span><span style="color:#f92672">;</span> 
+<span style="color:#f92672">}</span> 
+  
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Test</span> 
+<span style="color:#f92672">{</span> 
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">main</span><span style="color:#f92672">(</span>String args<span style="color:#f92672">[</span><span style="color:#f92672">]</span><span style="color:#f92672">)</span> 
+    <span style="color:#f92672">{</span> 
+        <span style="color:#66d9ef">int</span> a <span style="color:#f92672">=</span> 5<span style="color:#f92672">;</span> 
+  
+        <span style="color:#75715e">// lambda expression to define the calculate method 
+</span><span style="color:#75715e"></span>        Square s <span style="color:#f92672">=</span> <span style="color:#f92672">(</span><span style="color:#66d9ef">int</span> x<span style="color:#f92672">)</span><span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span>x<span style="color:#f92672">*</span>x<span style="color:#f92672">;</span> 
+  
+        <span style="color:#75715e">// parameter passed and return type must be 
+</span><span style="color:#75715e"></span>        <span style="color:#75715e">// same as defined in the prototype 
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">int</span> ans <span style="color:#f92672">=</span> s<span style="color:#f92672">.</span><span style="color:#a6e22e">calculate</span><span style="color:#f92672">(</span>a<span style="color:#f92672">)</span><span style="color:#f92672">;</span> 
+        System<span style="color:#f92672">.</span><span style="color:#a6e22e">out</span><span style="color:#f92672">.</span><span style="color:#a6e22e">println</span><span style="color:#f92672">(</span>ans<span style="color:#f92672">)</span><span style="color:#f92672">;</span> 
+    <span style="color:#f92672">}</span> 
+<span style="color:#f92672">}</span> 
+</code></pre></div><h2 id="optional">Optional</h2>
+<p>用于避免空指针异常, 以及支持Functional Interface实现用lambda表达式+链式操作</p>
+<ul>
+<li>
+<p>常用方法</p>
+<ul>
+<li>ifPresent方法</li>
+<li>orElseGet和orElseThrow方法</li>
+<li>filter方法</li>
+<li>map方法</li>
+<li>map方法</li>
+</ul>
+</li>
+<li>
+<p>sample</p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#75715e">// 以前的代码
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> String <span style="color:#a6e22e">test3</span><span style="color:#f92672">(</span>User user<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">if</span> <span style="color:#f92672">(</span>user <span style="color:#f92672">!</span><span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">&amp;</span><span style="color:#f92672">&amp;</span> user<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span> <span style="color:#f92672">!</span><span style="color:#f92672">=</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> user<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">.</span><span style="color:#a6e22e">toUpperCase</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span> <span style="color:#66d9ef">else</span> <span style="color:#f92672">{</span>
+        <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span>
+    <span style="color:#f92672">}</span>
+<span style="color:#f92672">}</span>
 
+<span style="color:#75715e">// 现在的代码
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">static</span> String <span style="color:#a6e22e">test</span><span style="color:#f92672">(</span>User user<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+    <span style="color:#66d9ef">return</span> Optional<span style="color:#f92672">.</span><span style="color:#a6e22e">ofNullable</span><span style="color:#f92672">(</span>user<span style="color:#f92672">)</span>
+            <span style="color:#f92672">.</span><span style="color:#a6e22e">map</span><span style="color:#f92672">(</span>user1 <span style="color:#f92672">-</span><span style="color:#f92672">&gt;</span> user1<span style="color:#f92672">.</span><span style="color:#a6e22e">getName</span><span style="color:#f92672">(</span><span style="color:#f92672">)</span><span style="color:#f92672">)</span>
+</code></pre></div>
 		</div>
 		<footer class="post__footer">
 			
