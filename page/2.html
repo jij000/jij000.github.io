@@ -156,6 +156,13 @@
 			</a>
 		</li>
 		<li class="menu__item">
+			<a class="menu__link" href="/post/spring-framework.html">
+				
+				<span class="menu__text">Spring Framework</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
 			<a class="menu__link" href="/post/the-process-of-creating-a-blog-system.html">
 				
 				<span class="menu__text">The process of creating a blog system</span>
@@ -328,6 +335,34 @@ Optional 类 Optional 类已经成为 Java 8 类库的一部分，用来解决�
 新工具 新的编译工具，如：Nashorn引擎 jjs、 类依赖分析器jdeps。
 Nashorn, JavaScript 引擎 Java 8提供了一个新的Nashorn javascript引擎，它允许我们在JVM上运行特定的javascript应用。
 	</div>
+</article><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/spring-framework.html" rel="bookmark">
+			Spring Framework
+			</a>
+		</h3>
+		<p class="list__lead post__lead">Example lead - highlighted near the title</p>
+		<div class="list__meta meta">
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/spring.html" rel="category">Spring</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		Spring的线程安全 Spring 的bean, 默认是 Singleton, 所以并不是线程安全的, 要让Controller之类保持无状态 (不要保存内容), 否则会产生线程安全的问题.
+可以用对象锁, ThreadLocal, 声明 scope 为 Request 来解决
+https://sylvanassun.github.io/2017/11/06/2017-11-06-spring_and_thread-safe/
+Spring对每个bean提供了一个scope属性来表示该bean的作用域。它是bean的生命周期。例如，一个scope为singleton的bean，在第一次被注入时，会创建为一个单例对象，该对象会一直被复用到应用结束。
+  singleton：默认的scope，每个scope为singleton的bean都会被定义为一个单例对象，该对象的生命周期是与Spring IOC容器一致的（但在第一次被注入时才会创建）。
+  prototype：bean被定义为在每次注入时都会创建一个新的对象。
+  request：bean被定义为在每个HTTP请求中创建一个单例对象，也就是说在单个请求中都会复用这一个单例对象。
+  session：bean被定义为在一个session的生命周期内创建一个单例对象。
+  application：bean被定义为在ServletContext的生命周期中复用一个单例对象。
+  websocket：bean被定义为在websocket的生命周期中复用一个单例对象。
+  
+	</div>
 </article>
 </main>
 
@@ -406,6 +441,9 @@ Nashorn, JavaScript 引擎 Java 8提供了一个新的Nashorn javascript引擎�
 				<a class="widget__link" href="/categories/soap.html">SOAP</a>
 			</li>
 			<li class="widget__item">
+				<a class="widget__link" href="/categories/spring.html">Spring</a>
+			</li>
+			<li class="widget__item">
 				<a class="widget__link" href="/categories/spring-boot.html">Spring Boot</a>
 			</li>
 		</ul>
@@ -431,6 +469,7 @@ Nashorn, JavaScript 引擎 Java 8提供了一个新的Nashorn javascript引擎�
 		<a class="widget-taglist__link widget__link btn" href="/tags/kubernetes.html" title="Kubernetes">Kubernetes</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/logstash.html" title="Logstash">Logstash</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/soap.html" title="SOAP">SOAP</a>
+		<a class="widget-taglist__link widget__link btn" href="/tags/spring.html" title="Spring">Spring</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/spring-boot.html" title="Spring Boot">Spring Boot</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/test.html" title="Test">Test</a>
 	</div>

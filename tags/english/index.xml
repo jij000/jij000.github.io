@@ -17,7 +17,7 @@
       <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
       
       <guid>https://jij000.github.io/post/keywords-chinese-english.html</guid>
-      <description>   中文 英文     耦合 couple   松耦合 loosely-coupled   紧耦合 close-coupled   解耦 decouple   异步 xxxx   同步 xxxx   削峰 xxxx   限流 xxxx    </description>
+      <description>   中文 英文     耦合 couple   松耦合 loosely-coupled   紧耦合 close-coupled   解耦 decouple   异步 asynchronous   同步 synchronous   削峰 limit the number of requests   限流 limit the number of requests   并发 parallel   敏捷 agile    </description>
     </item>
     
   </channel>

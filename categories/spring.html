@@ -4,22 +4,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>AWS - My Blog</title>
+	<title>Spring - My Blog</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-	<meta property="og:title" content="AWS" />
+	<meta property="og:title" content="Spring" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://jij000.github.io/categories/aws.html" />
+<meta property="og:url" content="https://jij000.github.io/categories/spring.html" />
 
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="AWS"/>
+<meta name="twitter:title" content="Spring"/>
 <meta name="twitter:description" content=""/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="alternate" type="application/rss+xml" href="/categories/aws/index.xml" title="My Blog">
+	<link rel="alternate" type="application/rss+xml" href="/categories/spring/index.xml" title="My Blog">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 	<link rel="stylesheet" href="/css/style.css">
 	
@@ -178,31 +178,34 @@
 			
 <main class="main list" role="main">
 	<header class="main__header">
-		<h1 class="main__title">AWS</h1>
+		<h1 class="main__title">Spring</h1>
 	</header><article class="list__item post">
-	<figure class="list__thumbnail">
-		<a href="https://jij000.github.io/post/aws.html">
-			<img src="/Thumbnail/aws_logo.jpg" alt="AWS" />
-		</a>
-	</figure>
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/aws.html" rel="bookmark">
-			AWS
+			<a href="/post/spring-framework.html" rel="bookmark">
+			Spring Framework
 			</a>
 		</h3>
+		<p class="list__lead post__lead">Example lead - highlighted near the title</p>
 		<div class="list__meta meta">
 <div class="meta__item-categories meta__item">
 	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/aws.html" rel="category">AWS</a>
+	<span class="meta__text"><a class="meta__link" href="/categories/spring.html" rel="category">Spring</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		EC2 虚拟主机
-S3 存储
-Lambda 函数计算服务, 无状态
-EKS Amazon Elastic Kubernetes Service
+		Spring的线程安全 Spring 的bean, 默认是 Singleton, 所以并不是线程安全的, 要让Controller之类保持无状态 (不要保存内容), 否则会产生线程安全的问题.
+可以用对象锁, ThreadLocal, 声明 scope 为 Request 来解决
+https://sylvanassun.github.io/2017/11/06/2017-11-06-spring_and_thread-safe/
+Spring对每个bean提供了一个scope属性来表示该bean的作用域。它是bean的生命周期。例如，一个scope为singleton的bean，在第一次被注入时，会创建为一个单例对象，该对象会一直被复用到应用结束。
+  singleton：默认的scope，每个scope为singleton的bean都会被定义为一个单例对象，该对象的生命周期是与Spring IOC容器一致的（但在第一次被注入时才会创建）。
+  prototype：bean被定义为在每次注入时都会创建一个新的对象。
+  request：bean被定义为在每个HTTP请求中创建一个单例对象，也就是说在单个请求中都会复用这一个单例对象。
+  session：bean被定义为在一个session的生命周期内创建一个单例对象。
+  application：bean被定义为在ServletContext的生命周期中复用一个单例对象。
+  websocket：bean被定义为在websocket的生命周期中复用一个单例对象。
+  
 	</div>
 </article>
 </main>

@@ -4,21 +4,38 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>The process of creating a blog system - My Blog</title>
+	<title>Spring Framework - My Blog</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-	<meta property="og:title" content="The process of creating a blog system" />
-<meta property="og:description" content="Key function  支持 markdown Angular / React 做界面 MySQL 保存数据 build on Kubernetes Junit 测试 Jenkins CI/CD micro service  user service blog comment Kafka 消息队列接受评论, 审核后发布 wiki 系统    Windows下安装minikube minikube使用帮助(https://kubernetes.io/docs/setup/learning-environment/minikube/) 安装Minikube
-# To access the Kubernetes Dashboard, run this command in a shell after starting Minikube to get the address minikube dashboard # To access a Service exposed via a node port, run this command in a shell after starting Minikube to get the address minikube service [-n NAMESPACE] [--url] NAME " />
+	<meta property="og:title" content="Spring Framework" />
+<meta property="og:description" content="Spring的线程安全 Spring 的bean, 默认是 Singleton, 所以并不是线程安全的, 要让Controller之类保持无状态 (不要保存内容), 否则会产生线程安全的问题.
+可以用对象锁, ThreadLocal, 声明 scope 为 Request 来解决
+https://sylvanassun.github.io/2017/11/06/2017-11-06-spring_and_thread-safe/
+Spring对每个bean提供了一个scope属性来表示该bean的作用域。它是bean的生命周期。例如，一个scope为singleton的bean，在第一次被注入时，会创建为一个单例对象，该对象会一直被复用到应用结束。
+  singleton：默认的scope，每个scope为singleton的bean都会被定义为一个单例对象，该对象的生命周期是与Spring IOC容器一致的（但在第一次被注入时才会创建）。
+  prototype：bean被定义为在每次注入时都会创建一个新的对象。
+  request：bean被定义为在每个HTTP请求中创建一个单例对象，也就是说在单个请求中都会复用这一个单例对象。
+  session：bean被定义为在一个session的生命周期内创建一个单例对象。
+  application：bean被定义为在ServletContext的生命周期中复用一个单例对象。
+  websocket：bean被定义为在websocket的生命周期中复用一个单例对象。
+  " />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://jij000.github.io/post/the-process-of-creating-a-blog-system.html" />
-<meta property="article:published_time" content="2020-01-31T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-01-31T00:00:00+00:00" />
+<meta property="og:url" content="https://jij000.github.io/post/spring-framework.html" />
+
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="The process of creating a blog system"/>
-<meta name="twitter:description" content="Key function  支持 markdown Angular / React 做界面 MySQL 保存数据 build on Kubernetes Junit 测试 Jenkins CI/CD micro service  user service blog comment Kafka 消息队列接受评论, 审核后发布 wiki 系统    Windows下安装minikube minikube使用帮助(https://kubernetes.io/docs/setup/learning-environment/minikube/) 安装Minikube
-# To access the Kubernetes Dashboard, run this command in a shell after starting Minikube to get the address minikube dashboard # To access a Service exposed via a node port, run this command in a shell after starting Minikube to get the address minikube service [-n NAMESPACE] [--url] NAME "/>
+<meta name="twitter:title" content="Spring Framework"/>
+<meta name="twitter:description" content="Spring的线程安全 Spring 的bean, 默认是 Singleton, 所以并不是线程安全的, 要让Controller之类保持无状态 (不要保存内容), 否则会产生线程安全的问题.
+可以用对象锁, ThreadLocal, 声明 scope 为 Request 来解决
+https://sylvanassun.github.io/2017/11/06/2017-11-06-spring_and_thread-safe/
+Spring对每个bean提供了一个scope属性来表示该bean的作用域。它是bean的生命周期。例如，一个scope为singleton的bean，在第一次被注入时，会创建为一个单例对象，该对象会一直被复用到应用结束。
+  singleton：默认的scope，每个scope为singleton的bean都会被定义为一个单例对象，该对象的生命周期是与Spring IOC容器一致的（但在第一次被注入时才会创建）。
+  prototype：bean被定义为在每次注入时都会创建一个新的对象。
+  request：bean被定义为在每个HTTP请求中创建一个单例对象，也就是说在单个请求中都会复用这一个单例对象。
+  session：bean被定义为在一个session的生命周期内创建一个单例对象。
+  application：bean被定义为在ServletContext的生命周期中复用一个单例对象。
+  websocket：bean被定义为在websocket的生命周期中复用一个单例对象。
+  "/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -156,14 +173,14 @@
 				
 			</a>
 		</li>
-		<li class="menu__item">
+		<li class="menu__item menu__item--active">
 			<a class="menu__link" href="/post/spring-framework.html">
 				
 				<span class="menu__text">Spring Framework</span>
 				
 			</a>
 		</li>
-		<li class="menu__item menu__item--active">
+		<li class="menu__item">
 			<a class="menu__link" href="/post/the-process-of-creating-a-blog-system.html">
 				
 				<span class="menu__text">The process of creating a blog system</span>
@@ -181,16 +198,12 @@
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">The process of creating a blog system</h1>
+			<h1 class="post__title">Spring Framework</h1>
+			<p class="post__lead">Example lead - highlighted near the title</p>
 			<div class="post__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2020-01-31T00:00:00">2020-01-31</time>
-</div>
-
 <div class="meta__item-categories meta__item">
 	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/blog.html" rel="category">blog</a>
+	<span class="meta__text"><a class="meta__link" href="/categories/spring.html" rel="category">Spring</a>
 	</span>
 </div></div>
 		</header>
@@ -199,46 +212,45 @@
 	<div class="toc__menu">
 		<nav id="TableOfContents">
   <ul>
-    <li><a href="#key-function">Key function</a></li>
-    <li><a href="#windows下安装minikube">Windows下安装minikube</a></li>
+    <li><a href="#spring的线程安全">Spring的线程安全</a></li>
   </ul>
 </nav>
 	</div>
 </div>
 <div class="content post__content clearfix">
-			<h2 id="key-function">Key function</h2>
+			<h2 id="spring的线程安全">Spring的线程安全</h2>
+<p>Spring 的bean, 默认是 Singleton, 所以并不是线程安全的, 要让Controller之类保持无状态 (不要保存内容), 否则会产生线程安全的问题.</p>
+<p>可以用对象锁, ThreadLocal, 声明 scope 为 Request 来解决</p>
+<p><a href="https://sylvanassun.github.io/2017/11/06/2017-11-06-spring_and_thread-safe/">https://sylvanassun.github.io/2017/11/06/2017-11-06-spring_and_thread-safe/</a></p>
+<p>Spring对每个bean提供了一个<strong>scope</strong>属性来表示该bean的作用域。它是<strong>bean的生命周期</strong>。例如，一个scope为singleton的bean，在第一次被注入时，会创建为一个单例对象，该对象会一直被复用到应用结束。</p>
 <ul>
-<li>支持 markdown</li>
-<li>Angular / React 做界面</li>
-<li>MySQL 保存数据</li>
-<li>build on Kubernetes</li>
-<li>Junit 测试</li>
-<li>Jenkins CI/CD</li>
-<li>micro service
-<ul>
-<li>user service</li>
-<li>blog</li>
-<li>comment</li>
-<li>Kafka 消息队列接受评论, 审核后发布</li>
-<li>wiki 系统</li>
-</ul>
+<li>
+<p><strong>singleton</strong>：默认的scope，每个scope为singleton的bean都会被定义为一个单例对象，该对象的生命周期是与Spring IOC容器一致的（但在第一次被注入时才会创建）。</p>
+</li>
+<li>
+<p><strong>prototype</strong>：bean被定义为在每次注入时都会创建一个新的对象。</p>
+</li>
+<li>
+<p><strong>request</strong>：bean被定义为在每个HTTP请求中创建一个单例对象，也就是说在单个请求中都会复用这一个单例对象。</p>
+</li>
+<li>
+<p><strong>session</strong>：bean被定义为在一个session的生命周期内创建一个单例对象。</p>
+</li>
+<li>
+<p><strong>application</strong>：bean被定义为在ServletContext的生命周期中复用一个单例对象。</p>
+</li>
+<li>
+<p><strong>websocket</strong>：bean被定义为在websocket的生命周期中复用一个单例对象。</p>
 </li>
 </ul>
-<h2 id="windows下安装minikube">Windows下安装minikube</h2>
-<p>minikube使用帮助(<a href="https://kubernetes.io/docs/setup/learning-environment/minikube/">https://kubernetes.io/docs/setup/learning-environment/minikube/</a>)
-<a href="https://kubernetes.io/docs/tasks/tools/install-minikube/">安装Minikube</a></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># To access the Kubernetes Dashboard, run this command in a shell after starting Minikube to get the address</span>
-minikube dashboard
-<span style="color:#75715e"># To access a Service exposed via a node port, run this command in a shell after starting Minikube to get the address</span>
-minikube service <span style="color:#f92672">[</span>-n NAMESPACE<span style="color:#f92672">]</span> <span style="color:#f92672">[</span>--url<span style="color:#f92672">]</span> NAME
-</code></pre></div>
+
 		</div>
 		<footer class="post__footer">
 			
 <div class="post__tags tags clearfix">
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
-		<li class="tags__item"><a class="tags__link btn" href="/tags/blog/" rel="tag">blog</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/spring/" rel="tag">Spring</a></li>
 	</ul>
 </div>
 		</footer>
@@ -258,11 +270,8 @@ minikube service <span style="color:#f92672">[</span>-n NAMESPACE<span style="co
 </div>
 
 <nav class="post-nav flex">
-	<div class="post-nav__item post-nav__item--prev">
-		<a class="post-nav__link" href="/post/kafka.html" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Kafka</p></a>
-	</div>
 	<div class="post-nav__item post-nav__item--next">
-		<a class="post-nav__link" href="/post/junit.html" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Junit</p></a>
+		<a class="post-nav__link" href="/post/new-features-in-java8.html" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">New features in Java 8</p></a>
 	</div>
 </nav>
 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Spring on My Blog</title>
+    <link>https://jij000.github.io/categories/spring.html</link>
+    <description>Recent content in Spring on My Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://jij000.github.io/categories/spring/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Spring Framework</title>
+      <link>https://jij000.github.io/post/spring-framework.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/post/spring-framework.html</guid>
+      <description>Spring的线程安全 Spring 的bean, 默认是 Singleton, 所以并不是线程安全的, 要让Controller之类保持无状态 (不要保存内容), 否则会产生线程安全的问题.
+可以用对象锁, ThreadLocal, 声明 scope 为 Request 来解决
+https://sylvanassun.github.io/2017/11/06/2017-11-06-spring_and_thread-safe/
+Spring对每个bean提供了一个scope属性来表示该bean的作用域。它是bean的生命周期。例如，一个scope为singleton的bean，在第一次被注入时，会创建为一个单例对象，该对象会一直被复用到应用结束。
+  singleton：默认的scope，每个scope为singleton的bean都会被定义为一个单例对象，该对象的生命周期是与Spring IOC容器一致的（但在第一次被注入时才会创建）。
+  prototype：bean被定义为在每次注入时都会创建一个新的对象。
+  request：bean被定义为在每个HTTP请求中创建一个单例对象，也就是说在单个请求中都会复用这一个单例对象。
+  session：bean被定义为在一个session的生命周期内创建一个单例对象。
+  application：bean被定义为在ServletContext的生命周期中复用一个单例对象。
+  websocket：bean被定义为在websocket的生命周期中复用一个单例对象。
+  </description>
+    </item>
+    
+  </channel>
+</rss>
