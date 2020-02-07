@@ -2,41 +2,41 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on My Blog</title>
-    <link>https://jij000.github.io/post.html</link>
+    <link>https://blog.ykeeps.com/post.html</link>
     <description>Recent content in Posts on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://jij000.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.ykeeps.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Junit</title>
-      <link>https://jij000.github.io/post/junit.html</link>
+      <link>https://blog.ykeeps.com/post/junit.html</link>
       <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/junit.html</guid>
+      <guid>https://blog.ykeeps.com/post/junit.html</guid>
       <description>https://www.ibm.com/developerworks/cn/java/j-introducing-junit5-part1-jupiter-api/index.html JUnit Jupiter 是使用 JUnit 5 编写测试内容的 API。JUnit 5 是一个项目名称（和版本），其 3 个主要模块关注不同的方面：JUnit Jupiter、JUnit Platform 和 JUnit Vintage。
 Anntation @Test @BeforeEach @BeforeAll @AfterEach @AfterAll Assertions.xxx() @MockBean @SpyBean</description>
     </item>
     
     <item>
       <title>The process of creating a blog system</title>
-      <link>https://jij000.github.io/post/the-process-of-creating-a-blog-system.html</link>
+      <link>https://blog.ykeeps.com/post/the-process-of-creating-a-blog-system.html</link>
       <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/the-process-of-creating-a-blog-system.html</guid>
+      <guid>https://blog.ykeeps.com/post/the-process-of-creating-a-blog-system.html</guid>
       <description>Key function  支持 markdown Angular / React 做界面 MySQL 保存数据 build on Kubernetes Junit 测试 Jenkins CI/CD micro service  user service blog comment Kafka 消息队列接受评论, 审核后发布 wiki 系统    Windows下安装minikube minikube使用帮助(https://kubernetes.io/docs/setup/learning-environment/minikube/) 安装Minikube
 # To access the Kubernetes Dashboard, run this command in a shell after starting Minikube to get the address minikube dashboard # To access a Service exposed via a node port, run this command in a shell after starting Minikube to get the address minikube service [-n NAMESPACE] [--url] NAME design domain  micro service  user post comment    参照MangoDB的官方示例 https://www.</description>
     </item>
     
     <item>
       <title>Kafka</title>
-      <link>https://jij000.github.io/post/kafka.html</link>
+      <link>https://blog.ykeeps.com/post/kafka.html</link>
       <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/kafka.html</guid>
+      <guid>https://blog.ykeeps.com/post/kafka.html</guid>
       <description>https://yq.aliyun.com/articles/31546 【笔记】Apache kafka实战 【快速入门】 Kafka入门 https://github.com/ZhongFuCheng3y/3y
 Kafka入门 生产者 &amp;amp; 消费者 Kafka是一个消息队列，把消息放到队列里边的叫生产者，从队列里边消费的叫消费者。
 topic 一个消息中间件，队列不单单只有一个，我们往往会有多个队列，而我们生产者和消费者就得知道：把数据丢给哪个队列，从哪个队列消息。我们需要给队列取名字，叫做topic(相当于数据库里边表的概念)
@@ -61,19 +61,19 @@ Broker 一台Kafka服务器叫做Broker，Kafka集群就是多台Kafka服务器�
     
     <item>
       <title>Keywords (Chinese-English)</title>
-      <link>https://jij000.github.io/post/keywords-chinese-english.html</link>
+      <link>https://blog.ykeeps.com/post/keywords-chinese-english.html</link>
       <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/keywords-chinese-english.html</guid>
+      <guid>https://blog.ykeeps.com/post/keywords-chinese-english.html</guid>
       <description>   中文 英文     耦合 couple   松耦合 loosely-coupled   紧耦合 close-coupled   解耦 decouple   异步 asynchronous   同步 synchronous   削峰 limit the number of requests   限流 limit the number of requests   并发 parallel   敏捷 agile    </description>
     </item>
     
     <item>
       <title>ELK</title>
-      <link>https://jij000.github.io/post/elk.html</link>
+      <link>https://blog.ykeeps.com/post/elk.html</link>
       <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/elk.html</guid>
+      <guid>https://blog.ykeeps.com/post/elk.html</guid>
       <description>https://www.elastic.co/cn/what-is/elk-stack
 “ELK”是三个开源项目的首字母缩写，这三个项目分别是：Elasticsearch、Logstash 和 Kibana。Elasticsearch 是一个搜索和分析引擎。Logstash 是服务器端数据处理管道，能够同时从多个来源采集数据，转换数据，然后将数据发送到诸如 Elasticsearch 等“存储库”中。Kibana 则可以让用户在 Elasticsearch 中使用图形和图表对数据进行可视化。
 Elastic Stack 是 ELK Stack 的更新换代产品。</description>
@@ -81,48 +81,48 @@ Elastic Stack 是 ELK Stack 的更新换代产品。</description>
     
     <item>
       <title>SOAP</title>
-      <link>https://jij000.github.io/post/soap.html</link>
+      <link>https://blog.ykeeps.com/post/soap.html</link>
       <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/soap.html</guid>
+      <guid>https://blog.ykeeps.com/post/soap.html</guid>
       <description>SOAP (Simple Object Access Protocol) https://searchapparchitecture.techtarget.com/definition/SOAP-Simple-Object-Access-Protocol
  SOAP 基于 XML 格式, 使用Http发送(或者其他网络协议) REST 可以用各种格式, 只用HTTP传输, 使用GET, PUT, POST and DELETE 方法来区分数据的操作  </description>
     </item>
     
     <item>
       <title>Spring Boot</title>
-      <link>https://jij000.github.io/post/spring-boot.html</link>
+      <link>https://blog.ykeeps.com/post/spring-boot.html</link>
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/spring-boot.html</guid>
+      <guid>https://blog.ykeeps.com/post/spring-boot.html</guid>
       <description>CommandLineRunner  当SpringApplication启动后，我们希望执行某些代码，这是可以通过实现ApplicationRunner或CommandLineRunner接口来实现我们的需求。两个接口的工作方式相同，并且都提供了一个run方法，该方法将在SpringApplication.run(…​)完成之后被调用。  @SpringBootApplicationpublic class SampleSimpleApplication implements CommandLineRunner {@Overridepublic void run(String... args) { // 执行完main 后会执行这个方法 System.out.println(&amp;#34;hello world&amp;#34;);}public static void main(String[] args) throws Exception {SpringApplication.run(SampleSimpleApplication.class, args);}} 当有多个CommandLineRunner的实现时，可以通过实现　Ordered接口来定义调用顺序。代码如下。  import org.springframework.boot.CommandLineRunner;import org.springframework.core.Ordered;import org.springframework.stereotype.Component;@Componentpublic class HelloCommandLine implements CommandLineRunner,Ordered{@Overridepublic void run(String... args) throws Exception {System.out.println(this.getClass().getName());}@Overridepublic int getOrder() {return 11; // 数字越小优先执行 }}</description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>https://jij000.github.io/post/docker.html</link>
+      <link>https://blog.ykeeps.com/post/docker.html</link>
       <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/docker.html</guid>
+      <guid>https://blog.ykeeps.com/post/docker.html</guid>
       <description>常用命令 docker pull nginx # 拉取镜像docker run -d -p 8080:80 nginx # 运行容器, -d 后台运行, -p 主机端口 : 容器端口 做映射docker run -d -P nginx # 运行容器, -d 后台运行, -P 容器的所有端口和主机随机的端口映射, docker ps 可以看到映射的情况docker images # 查看现有镜像docker ps # 查看正在运行的容器docker run --help # 查看帮助docker exec --help # 进入容器内部docker exec -it 03 bash # 进入容器内部, 打开一个容器终端, 03是容器id的开头部分exit # 退出容器终端docker stop 1f #关闭容器docker restart 1f #重启容器which nginx # 查找nginx的安装位置netstat -na|grep 8888 # 查找端口状态uname -a # 查看系统版本制作镜像 Dockerfile</description>
     </item>
     
     <item>
       <title>Hibernate</title>
-      <link>https://jij000.github.io/post/hibernate.html</link>
+      <link>https://blog.ykeeps.com/post/hibernate.html</link>
       <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/hibernate.html</guid>
+      <guid>https://blog.ykeeps.com/post/hibernate.html</guid>
       <description>Transaction isolation levels https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/ A transaction isolation level is defined by the following phenomena –
  Dirty Read – A Dirty read is the situation when a transaction reads a data that has not yet been committed. For example, Let’s say transaction 1 updates a row and leaves it uncommitted, meanwhile, Transaction 2 reads the updated row. If transaction 1 rolls back the change, transaction 2 will have read data that is considered never to have existed.</description>
     </item>
     
     <item>
       <title>Kubernetes</title>
-      <link>https://jij000.github.io/post/kubernetes.html</link>
+      <link>https://blog.ykeeps.com/post/kubernetes.html</link>
       <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/kubernetes.html</guid>
+      <guid>https://blog.ykeeps.com/post/kubernetes.html</guid>
       <description>https://kubernetes.io/docs/setup/learning-environment/minikube/ Kubernetes 指南 详细教程
 架构图 kubectl 命令行控制工具
 # Health Checkkubectl cluster-infoetcd key value 数据库, 存储集群所有重要配置信息(持久化)
@@ -140,10 +140,10 @@ Deploying the Dashboard UI The Dashboard UI is not deployed by default. To deplo
     
     <item>
       <title>Angular</title>
-      <link>https://jij000.github.io/post/angular.html</link>
+      <link>https://blog.ykeeps.com/post/angular.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/angular.html</guid>
+      <guid>https://blog.ykeeps.com/post/angular.html</guid>
       <description>参考资料 https://coding.imooc.com/class/336.html
 环境安装 nodejs npm https://www.npmjs.com/package/@angular/cli
 创建工程 # 转到适当文件夹, 创建工程 ng new pingduoduo # 进入工程文件夹, 安装依赖包, 安装在 node_modules 下面 # 无需执行, new 工程时已集成 npm install # 编译并启动服务器, 可预览 ng serve # 检查typescript语法, tslint.json定义了语法规则 ng lint  工程中文件定义     文件名 定义     package.json 每个npm包都会有, 定义了依赖关系   browserslist 定义了支持的浏览器   .editorconfig 编辑器的风格统一   angular.json Angular的配置(项目配置, 编译路径, 输出路径等)    Component (组件) 组件封装 组件输入输出 组件的生命周期 模板在组件类中的引用  开发用工具: https://docs.</description>
@@ -151,10 +151,10 @@ Deploying the Dashboard UI The Dashboard UI is not deployed by default. To deplo
     
     <item>
       <title>AWS</title>
-      <link>https://jij000.github.io/post/aws.html</link>
+      <link>https://blog.ykeeps.com/post/aws.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/aws.html</guid>
+      <guid>https://blog.ykeeps.com/post/aws.html</guid>
       <description>EC2 虚拟主机
 S3 存储
 Lambda 函数计算服务, 无状态
@@ -163,19 +163,19 @@ EKS Amazon Elastic Kubernetes Service</description>
     
     <item>
       <title>Design Patterns</title>
-      <link>https://jij000.github.io/post/design-patterns.html</link>
+      <link>https://blog.ykeeps.com/post/design-patterns.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/design-patterns.html</guid>
+      <guid>https://blog.ykeeps.com/post/design-patterns.html</guid>
       <description>Principle 原则 开闭原则  一个软件实体, 如类, 模块, 函数, 应该对扩展开放, 对修改关 面对抽象, 接口编程  依赖倒置原则  高层模块不应该依赖低层模块, 二者都应该依赖其抽象 抽象不应该依赖细节; 细节应该依赖抽象 针对接口编程, 不要针对实现编程  单一职责原则  不要存在多于一个导致类变更的原因 一个类/接口/方法只负责一项职责  接口隔离原则  用多个专门的接口, 而不使用单一的总接口, 客户端不应该依赖它不需要的接口 一个类对一个类的依赖应该建立在最小的接口上 建立单一接口, 不要建立庞大臃肿的接口 尽量细化接口, 接口中的方法尽量少 但是也要有限度  迪米特法则  一个对象应该对其他对象保持最少的了解. 又叫最少知道原则. 尽量降低类与类之间的耦合  里氏替换原则  派生类（子类）对象可以在程式中代替其基类（超类）对象。  合成复用原则 Composite Reuse Principle, CRP  尽量使用对象组合，而不是继承来达到复用的目的。也叫：组合/聚合复用原则 需要慎重使用继承复用  Creational Design Pattern Factory Pattern 工厂模式  简单工厂: 由一个工厂对象决定创建出哪一种产品类的实例   定义一个创建对象的接口, 但让实现这个接口的类来决定实例化哪个类, 工厂方法让类的实例化推迟到子类中进行  Abstract Factory Pattern 抽象工厂模式  提供一个创建一系列相关或者相互依赖对象的接口 无需指定他们具体的类 便于创建产品族, 而工厂模式侧重于创建产品等级  Singleton Pattern 单例模式  保证一个类仅有一个实例, 并提供一个全局访问点 私有构造器 线程安全 延迟加载 序列化和反序列化 反射  Prototype Pattern 原型模式  指原型实例指定创建对象的种类, 并且通过Copy这些原型创建新的对象 注意深克隆和浅克隆  Builder Pattern 建造者模式  将一个复杂对象的构建, 与它的表示分离, 使得同样的构建过程可以创建不同的表示 用户只需指定需要建造的类型就可以得到它们, 建造过程及细节不需要知道  </description>
     </item>
     
     <item>
       <title>EJB</title>
-      <link>https://jij000.github.io/post/ejb.html</link>
+      <link>https://blog.ykeeps.com/post/ejb.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/ejb.html</guid>
+      <guid>https://blog.ykeeps.com/post/ejb.html</guid>
       <description>参考资料 EJB到底是什么，真的那么神秘吗？？ EJB Tutorial
 EJB 概念  将业务逻辑从客户端软件中抽取出来，封装在一个组件中。这个组件运行在一个独立的服务器上，客户端软件通过网络调用组件提供的服务以实现业务逻辑，而客户端软件的功能单纯到只负责发送调用请求和显示处理结果。 在J2EE 中，这个运行在一个独立的服务器上，并封装了业务逻辑的组件就是EJB（Enterprise JavaBean）组件。 企业开发的逻辑非常复杂, 将业务逻辑抽取出来, 便于组件复用?  EJB 的实现技术 EJB 是运行在独立服务器上的组件，客户端是通过网络对EJB 对象进行调用的。在Java中，能够实现远程对象调用的技术是RMI，而EJB 技术基础正是RMI。通过RMI 技术，J2EE将EJB 组件创建为远程对象，客户端就可以通过网络调用EJB 对象了。
 RMI RMI 英文全称是&amp;quot;Remote Method Invocation&amp;rdquo;，它的中文名称是&amp;quot;远程方法调用&amp;rdquo;，它就是利用Java 对象序列化的机制实现分布式计算，实现远程类对象的实例化以及调用的方法。</description>
@@ -183,37 +183,37 @@ RMI RMI 英文全称是&amp;quot;Remote Method Invocation&amp;rdquo;，它的中
     
     <item>
       <title>Java Core</title>
-      <link>https://jij000.github.io/post/java-core.html</link>
+      <link>https://blog.ykeeps.com/post/java-core.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/java-core.html</guid>
+      <guid>https://blog.ykeeps.com/post/java-core.html</guid>
       <description>Java 多线程 异常处理 BIO,NIO,AIO 有什么区别?  BIO (Blocking I/O): 同步阻塞I/O模式，数据的读取写入必须阻塞在一个线程内等待其完成。在活动连接数不是特别高（小于单机1000）的情况下，这种模型是比较不错的，可以让每一个连接专注于自己的 I/O 并且编程模型简单，也不用过多考虑系统的过载、限流等问题。线程池本身就是一个天然的漏斗，可以缓冲一些系统处理不了的连接或请求。但是，当面对十万甚至百万级连接的时候，传统的 BIO 模型是无能为力的。因此，我们需要一种更高效的 I/O 处理模型来应对更高的并发量。 NIO (New I/O): NIO是一种同步非阻塞的I/O模型，在Java 1.4 中引入了NIO框架，对应 java.nio 包，提供了 Channel , Selector，Buffer等抽象。NIO中的N可以理解为Non-blocking，不单纯是New。它支持面向缓冲的，基于通道的I/O操作方法。 NIO提供了与传统BIO模型中的 Socket 和 ServerSocket 相对应的 SocketChannel 和 ServerSocketChannel 两种不同的套接字通道实现,两种通道都支持阻塞和非阻塞两种模式。阻塞模式使用就像传统中的支持一样，比较简单，但是性能和可靠性都不好；非阻塞模式正好与之相反。对于低负载、低并发的应用程序，可以使用同步阻塞I/O来提升开发速率和更好的维护性；对于高负载、高并发的（网络）应用，应使用 NIO 的非阻塞模式来开发 AIO (Asynchronous I/O): AIO 也就是 NIO 2。在 Java 7 中引入了 NIO 的改进版 NIO 2,它是异步非阻塞的IO模型。异步 IO 是基于事件和回调机制实现的，也就是应用操作之后会直接返回，不会堵塞在那里，当后台处理完成，操作系统会通知相应的线程进行后续的操作。AIO 是异步IO的缩写，虽然 NIO 在网络操作中，提供了非阻塞的方法，但是 NIO 的 IO 行为还是同步的。对于 NIO 来说，我们的业务线程是在 IO 操作准备好时，得到通知，接着就由这个线程自行进行 IO 操作，IO操作本身是同步的。查阅网上相关资料，我发现就目前来说 AIO 的应用还不是很广泛，Netty 之前也尝试使用过 AIO，不过又放弃了。  深拷贝 vs 浅拷贝   浅拷贝：对基本数据类型进行值传递，对引用数据类型进行引用传递般的拷贝，此为浅拷贝。</description>
     </item>
     
     <item>
       <title>Jenkins</title>
-      <link>https://jij000.github.io/post/jenkins.html</link>
+      <link>https://blog.ykeeps.com/post/jenkins.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/jenkins.html</guid>
+      <guid>https://blog.ykeeps.com/post/jenkins.html</guid>
       <description>安装 # 从docker安装docker run -d -u root --name jenkins \ -p 8080:8080 -p 50000:50000 \ -v /root/jenkins_2112:/var/jenkins_home \ jenkins/jenkins:2.112-alpine# 查看admin初始passworddocker exec -it jenkins cat /var/jenkins_home/secrets/initialAdminPassword 安装docker 插件  </description>
     </item>
     
     <item>
       <title>JVM</title>
-      <link>https://jij000.github.io/post/jvm.html</link>
+      <link>https://blog.ykeeps.com/post/jvm.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/jvm.html</guid>
+      <guid>https://blog.ykeeps.com/post/jvm.html</guid>
       <description>JVM Framework reflection 反射 Class Loader GC GC策略 GC算法 JVM运行模式 </description>
     </item>
     
     <item>
       <title>New features in Java 8</title>
-      <link>https://jij000.github.io/post/new-features-in-java8.html</link>
+      <link>https://blog.ykeeps.com/post/new-features-in-java8.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/new-features-in-java8.html</guid>
+      <guid>https://blog.ykeeps.com/post/new-features-in-java8.html</guid>
       <description>Lambda 表达式 Lambda允许把函数作为一个方法的参数（函数作为参数传递进方法中。
 方法引用 方法引用提供了非常有用的语法，可以直接引用已有Java类或对象（实例）的方法或构造器。与lambda联合使用，方法引用可以使语言的构造更紧凑简洁，减少冗余代码。
 默认方法 默认方法就是一个在接口里面有了一个实现的方法。
@@ -226,10 +226,10 @@ Nashorn, JavaScript 引擎 Java 8提供了一个新的Nashorn javascript引擎�
     
     <item>
       <title>Spring Framework</title>
-      <link>https://jij000.github.io/post/spring-framework.html</link>
+      <link>https://blog.ykeeps.com/post/spring-framework.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/spring-framework.html</guid>
+      <guid>https://blog.ykeeps.com/post/spring-framework.html</guid>
       <description>Spring的线程安全 Spring 的bean, 默认是 Singleton, 所以并不是线程安全的, 要让Controller之类保持无状态 (不要保存内容), 否则会产生线程安全的问题.
 可以用对象锁, ThreadLocal, 声明 scope 为 Request 来解决
 https://sylvanassun.github.io/2017/11/06/2017-11-06-spring_and_thread-safe/

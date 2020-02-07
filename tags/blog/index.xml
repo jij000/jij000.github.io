@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>blog on My Blog</title>
-    <link>https://jij000.github.io/tags/blog.html</link>
+    <link>https://blog.ykeeps.com/tags/blog.html</link>
     <description>Recent content in blog on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://jij000.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.ykeeps.com/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>The process of creating a blog system</title>
-      <link>https://jij000.github.io/post/the-process-of-creating-a-blog-system.html</link>
+      <link>https://blog.ykeeps.com/post/the-process-of-creating-a-blog-system.html</link>
       <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/the-process-of-creating-a-blog-system.html</guid>
+      <guid>https://blog.ykeeps.com/post/the-process-of-creating-a-blog-system.html</guid>
       <description>Key function  支持 markdown Angular / React 做界面 MySQL 保存数据 build on Kubernetes Junit 测试 Jenkins CI/CD micro service  user service blog comment Kafka 消息队列接受评论, 审核后发布 wiki 系统    Windows下安装minikube minikube使用帮助(https://kubernetes.io/docs/setup/learning-environment/minikube/) 安装Minikube
 # To access the Kubernetes Dashboard, run this command in a shell after starting Minikube to get the address minikube dashboard # To access a Service exposed via a node port, run this command in a shell after starting Minikube to get the address minikube service [-n NAMESPACE] [--url] NAME design domain  micro service  user post comment    参照MangoDB的官方示例 https://www.</description>
     </item>

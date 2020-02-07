@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Junit on My Blog</title>
-    <link>https://jij000.github.io/categories/junit.html</link>
+    <link>https://blog.ykeeps.com/categories/junit.html</link>
     <description>Recent content in Junit on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://jij000.github.io/categories/junit/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.ykeeps.com/categories/junit/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Junit</title>
-      <link>https://jij000.github.io/post/junit.html</link>
+      <link>https://blog.ykeeps.com/post/junit.html</link>
       <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/junit.html</guid>
+      <guid>https://blog.ykeeps.com/post/junit.html</guid>
       <description>https://www.ibm.com/developerworks/cn/java/j-introducing-junit5-part1-jupiter-api/index.html JUnit Jupiter 是使用 JUnit 5 编写测试内容的 API。JUnit 5 是一个项目名称（和版本），其 3 个主要模块关注不同的方面：JUnit Jupiter、JUnit Platform 和 JUnit Vintage。
 Anntation @Test @BeforeEach @BeforeAll @AfterEach @AfterAll Assertions.xxx() @MockBean @SpyBean</description>
     </item>

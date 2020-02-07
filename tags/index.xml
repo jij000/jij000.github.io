@@ -2,201 +2,201 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on My Blog</title>
-    <link>https://jij000.github.io/tags.html</link>
+    <link>https://blog.ykeeps.com/tags.html</link>
     <description>Recent content in Tags on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://jij000.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.ykeeps.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>blog</title>
-      <link>https://jij000.github.io/tags/blog.html</link>
+      <link>https://blog.ykeeps.com/tags/blog.html</link>
       <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/blog.html</guid>
+      <guid>https://blog.ykeeps.com/tags/blog.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Junit</title>
-      <link>https://jij000.github.io/tags/junit.html</link>
+      <link>https://blog.ykeeps.com/tags/junit.html</link>
       <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/junit.html</guid>
+      <guid>https://blog.ykeeps.com/tags/junit.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>English</title>
-      <link>https://jij000.github.io/tags/english.html</link>
+      <link>https://blog.ykeeps.com/tags/english.html</link>
       <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/english.html</guid>
+      <guid>https://blog.ykeeps.com/tags/english.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kafka</title>
-      <link>https://jij000.github.io/tags/kafka.html</link>
+      <link>https://blog.ykeeps.com/tags/kafka.html</link>
       <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/kafka.html</guid>
+      <guid>https://blog.ykeeps.com/tags/kafka.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Elasticsearch</title>
-      <link>https://jij000.github.io/tags/elasticsearch.html</link>
+      <link>https://blog.ykeeps.com/tags/elasticsearch.html</link>
       <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/elasticsearch.html</guid>
+      <guid>https://blog.ykeeps.com/tags/elasticsearch.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kibana</title>
-      <link>https://jij000.github.io/tags/kibana.html</link>
+      <link>https://blog.ykeeps.com/tags/kibana.html</link>
       <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/kibana.html</guid>
+      <guid>https://blog.ykeeps.com/tags/kibana.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Logstash</title>
-      <link>https://jij000.github.io/tags/logstash.html</link>
+      <link>https://blog.ykeeps.com/tags/logstash.html</link>
       <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/logstash.html</guid>
+      <guid>https://blog.ykeeps.com/tags/logstash.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>SOAP</title>
-      <link>https://jij000.github.io/tags/soap.html</link>
+      <link>https://blog.ykeeps.com/tags/soap.html</link>
       <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/soap.html</guid>
+      <guid>https://blog.ykeeps.com/tags/soap.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spring Boot</title>
-      <link>https://jij000.github.io/tags/spring-boot.html</link>
+      <link>https://blog.ykeeps.com/tags/spring-boot.html</link>
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/spring-boot.html</guid>
+      <guid>https://blog.ykeeps.com/tags/spring-boot.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>https://jij000.github.io/tags/docker.html</link>
+      <link>https://blog.ykeeps.com/tags/docker.html</link>
       <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/docker.html</guid>
+      <guid>https://blog.ykeeps.com/tags/docker.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hibernate</title>
-      <link>https://jij000.github.io/tags/hibernate.html</link>
+      <link>https://blog.ykeeps.com/tags/hibernate.html</link>
       <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/hibernate.html</guid>
+      <guid>https://blog.ykeeps.com/tags/hibernate.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kubernetes</title>
-      <link>https://jij000.github.io/tags/kubernetes.html</link>
+      <link>https://blog.ykeeps.com/tags/kubernetes.html</link>
       <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/kubernetes.html</guid>
+      <guid>https://blog.ykeeps.com/tags/kubernetes.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Angular</title>
-      <link>https://jij000.github.io/tags/angular.html</link>
+      <link>https://blog.ykeeps.com/tags/angular.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/angular.html</guid>
+      <guid>https://blog.ykeeps.com/tags/angular.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Another test</title>
-      <link>https://jij000.github.io/tags/another-test.html</link>
+      <link>https://blog.ykeeps.com/tags/another-test.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/another-test.html</guid>
+      <guid>https://blog.ykeeps.com/tags/another-test.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>AWS</title>
-      <link>https://jij000.github.io/tags/aws.html</link>
+      <link>https://blog.ykeeps.com/tags/aws.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/aws.html</guid>
+      <guid>https://blog.ykeeps.com/tags/aws.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Design Patterns</title>
-      <link>https://jij000.github.io/tags/design-patterns.html</link>
+      <link>https://blog.ykeeps.com/tags/design-patterns.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/design-patterns.html</guid>
+      <guid>https://blog.ykeeps.com/tags/design-patterns.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>EJB</title>
-      <link>https://jij000.github.io/tags/ejb.html</link>
+      <link>https://blog.ykeeps.com/tags/ejb.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/ejb.html</guid>
+      <guid>https://blog.ykeeps.com/tags/ejb.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jenkins</title>
-      <link>https://jij000.github.io/tags/jenkins.html</link>
+      <link>https://blog.ykeeps.com/tags/jenkins.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/jenkins.html</guid>
+      <guid>https://blog.ykeeps.com/tags/jenkins.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>JVM</title>
-      <link>https://jij000.github.io/tags/jvm.html</link>
+      <link>https://blog.ykeeps.com/tags/jvm.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/jvm.html</guid>
+      <guid>https://blog.ykeeps.com/tags/jvm.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spring</title>
-      <link>https://jij000.github.io/tags/spring.html</link>
+      <link>https://blog.ykeeps.com/tags/spring.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/spring.html</guid>
+      <guid>https://blog.ykeeps.com/tags/spring.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Test</title>
-      <link>https://jij000.github.io/tags/test.html</link>
+      <link>https://blog.ykeeps.com/tags/test.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/tags/test.html</guid>
+      <guid>https://blog.ykeeps.com/tags/test.html</guid>
       <description></description>
     </item>
     

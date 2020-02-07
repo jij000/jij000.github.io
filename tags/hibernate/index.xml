@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hibernate on My Blog</title>
-    <link>https://jij000.github.io/tags/hibernate.html</link>
+    <link>https://blog.ykeeps.com/tags/hibernate.html</link>
     <description>Recent content in Hibernate on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 26 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://jij000.github.io/tags/hibernate/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.ykeeps.com/tags/hibernate/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hibernate</title>
-      <link>https://jij000.github.io/post/hibernate.html</link>
+      <link>https://blog.ykeeps.com/post/hibernate.html</link>
       <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/hibernate.html</guid>
+      <guid>https://blog.ykeeps.com/post/hibernate.html</guid>
       <description>Transaction isolation levels https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/ A transaction isolation level is defined by the following phenomena –
  Dirty Read – A Dirty read is the situation when a transaction reads a data that has not yet been committed. For example, Let’s say transaction 1 updates a row and leaves it uncommitted, meanwhile, Transaction 2 reads the updated row. If transaction 1 rolls back the change, transaction 2 will have read data that is considered never to have existed.</description>
     </item>

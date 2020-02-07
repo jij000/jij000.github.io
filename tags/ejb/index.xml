@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>EJB on My Blog</title>
-    <link>https://jij000.github.io/tags/ejb.html</link>
+    <link>https://blog.ykeeps.com/tags/ejb.html</link>
     <description>Recent content in EJB on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://jij000.github.io/tags/ejb/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.ykeeps.com/tags/ejb/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>EJB</title>
-      <link>https://jij000.github.io/post/ejb.html</link>
+      <link>https://blog.ykeeps.com/post/ejb.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/ejb.html</guid>
+      <guid>https://blog.ykeeps.com/post/ejb.html</guid>
       <description>参考资料 EJB到底是什么，真的那么神秘吗？？ EJB Tutorial
 EJB 概念  将业务逻辑从客户端软件中抽取出来，封装在一个组件中。这个组件运行在一个独立的服务器上，客户端软件通过网络调用组件提供的服务以实现业务逻辑，而客户端软件的功能单纯到只负责发送调用请求和显示处理结果。 在J2EE 中，这个运行在一个独立的服务器上，并封装了业务逻辑的组件就是EJB（Enterprise JavaBean）组件。 企业开发的逻辑非常复杂, 将业务逻辑抽取出来, 便于组件复用?  EJB 的实现技术 EJB 是运行在独立服务器上的组件，客户端是通过网络对EJB 对象进行调用的。在Java中，能够实现远程对象调用的技术是RMI，而EJB 技术基础正是RMI。通过RMI 技术，J2EE将EJB 组件创建为远程对象，客户端就可以通过网络调用EJB 对象了。
 RMI RMI 英文全称是&amp;quot;Remote Method Invocation&amp;rdquo;，它的中文名称是&amp;quot;远程方法调用&amp;rdquo;，它就是利用Java 对象序列化的机制实现分布式计算，实现远程类对象的实例化以及调用的方法。</description>

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Kafka on My Blog</title>
-    <link>https://jij000.github.io/tags/kafka.html</link>
+    <link>https://blog.ykeeps.com/tags/kafka.html</link>
     <description>Recent content in Kafka on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 30 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://jij000.github.io/tags/kafka/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.ykeeps.com/tags/kafka/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Kafka</title>
-      <link>https://jij000.github.io/post/kafka.html</link>
+      <link>https://blog.ykeeps.com/post/kafka.html</link>
       <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/kafka.html</guid>
+      <guid>https://blog.ykeeps.com/post/kafka.html</guid>
       <description>https://yq.aliyun.com/articles/31546 【笔记】Apache kafka实战 【快速入门】 Kafka入门 https://github.com/ZhongFuCheng3y/3y
 Kafka入门 生产者 &amp;amp; 消费者 Kafka是一个消息队列，把消息放到队列里边的叫生产者，从队列里边消费的叫消费者。
 topic 一个消息中间件，队列不单单只有一个，我们往往会有多个队列，而我们生产者和消费者就得知道：把数据丢给哪个队列，从哪个队列消息。我们需要给队列取名字，叫做topic(相当于数据库里边表的概念)

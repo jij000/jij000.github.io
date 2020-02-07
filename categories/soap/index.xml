@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>SOAP on My Blog</title>
-    <link>https://jij000.github.io/categories/soap.html</link>
+    <link>https://blog.ykeeps.com/categories/soap.html</link>
     <description>Recent content in SOAP on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://jij000.github.io/categories/soap/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.ykeeps.com/categories/soap/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>SOAP</title>
-      <link>https://jij000.github.io/post/soap.html</link>
+      <link>https://blog.ykeeps.com/post/soap.html</link>
       <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/post/soap.html</guid>
+      <guid>https://blog.ykeeps.com/post/soap.html</guid>
       <description>SOAP (Simple Object Access Protocol) https://searchapparchitecture.techtarget.com/definition/SOAP-Simple-Object-Access-Protocol
  SOAP 基于 XML 格式, 使用Http发送(或者其他网络协议) REST 可以用各种格式, 只用HTTP传输, 使用GET, PUT, POST and DELETE 方法来区分数据的操作  </description>
     </item>

@@ -2,165 +2,165 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on My Blog</title>
-    <link>https://jij000.github.io/categories.html</link>
+    <link>https://blog.ykeeps.com/categories.html</link>
     <description>Recent content in Categories on My Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 31 Jan 2020 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://jij000.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://blog.ykeeps.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>blog</title>
-      <link>https://jij000.github.io/categories/blog.html</link>
+      <link>https://blog.ykeeps.com/categories/blog.html</link>
       <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/categories/blog.html</guid>
+      <guid>https://blog.ykeeps.com/categories/blog.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Junit</title>
-      <link>https://jij000.github.io/categories/junit.html</link>
+      <link>https://blog.ykeeps.com/categories/junit.html</link>
       <pubDate>Fri, 31 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/categories/junit.html</guid>
+      <guid>https://blog.ykeeps.com/categories/junit.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>English</title>
-      <link>https://jij000.github.io/categories/english.html</link>
+      <link>https://blog.ykeeps.com/categories/english.html</link>
       <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/categories/english.html</guid>
+      <guid>https://blog.ykeeps.com/categories/english.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kafka</title>
-      <link>https://jij000.github.io/categories/kafka.html</link>
+      <link>https://blog.ykeeps.com/categories/kafka.html</link>
       <pubDate>Thu, 30 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/categories/kafka.html</guid>
+      <guid>https://blog.ykeeps.com/categories/kafka.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>ELK</title>
-      <link>https://jij000.github.io/categories/elk.html</link>
+      <link>https://blog.ykeeps.com/categories/elk.html</link>
       <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/categories/elk.html</guid>
+      <guid>https://blog.ykeeps.com/categories/elk.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>SOAP</title>
-      <link>https://jij000.github.io/categories/soap.html</link>
+      <link>https://blog.ykeeps.com/categories/soap.html</link>
       <pubDate>Wed, 29 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/categories/soap.html</guid>
+      <guid>https://blog.ykeeps.com/categories/soap.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spring Boot</title>
-      <link>https://jij000.github.io/categories/spring-boot.html</link>
+      <link>https://blog.ykeeps.com/categories/spring-boot.html</link>
       <pubDate>Mon, 27 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/categories/spring-boot.html</guid>
+      <guid>https://blog.ykeeps.com/categories/spring-boot.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>https://jij000.github.io/categories/docker.html</link>
+      <link>https://blog.ykeeps.com/categories/docker.html</link>
       <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/categories/docker.html</guid>
+      <guid>https://blog.ykeeps.com/categories/docker.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Hibernate</title>
-      <link>https://jij000.github.io/categories/hibernate.html</link>
+      <link>https://blog.ykeeps.com/categories/hibernate.html</link>
       <pubDate>Sun, 26 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/categories/hibernate.html</guid>
+      <guid>https://blog.ykeeps.com/categories/hibernate.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Kubernetes</title>
-      <link>https://jij000.github.io/categories/kubernetes.html</link>
+      <link>https://blog.ykeeps.com/categories/kubernetes.html</link>
       <pubDate>Tue, 21 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/categories/kubernetes.html</guid>
+      <guid>https://blog.ykeeps.com/categories/kubernetes.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Angular</title>
-      <link>https://jij000.github.io/categories/angular.html</link>
+      <link>https://blog.ykeeps.com/categories/angular.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/categories/angular.html</guid>
+      <guid>https://blog.ykeeps.com/categories/angular.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>AWS</title>
-      <link>https://jij000.github.io/categories/aws.html</link>
+      <link>https://blog.ykeeps.com/categories/aws.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/categories/aws.html</guid>
+      <guid>https://blog.ykeeps.com/categories/aws.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Design Patterns</title>
-      <link>https://jij000.github.io/categories/design-patterns.html</link>
+      <link>https://blog.ykeeps.com/categories/design-patterns.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/categories/design-patterns.html</guid>
+      <guid>https://blog.ykeeps.com/categories/design-patterns.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>EJB</title>
-      <link>https://jij000.github.io/categories/ejb.html</link>
+      <link>https://blog.ykeeps.com/categories/ejb.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/categories/ejb.html</guid>
+      <guid>https://blog.ykeeps.com/categories/ejb.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Java</title>
-      <link>https://jij000.github.io/categories/java.html</link>
+      <link>https://blog.ykeeps.com/categories/java.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/categories/java.html</guid>
+      <guid>https://blog.ykeeps.com/categories/java.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jenkins</title>
-      <link>https://jij000.github.io/categories/jenkins.html</link>
+      <link>https://blog.ykeeps.com/categories/jenkins.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/categories/jenkins.html</guid>
+      <guid>https://blog.ykeeps.com/categories/jenkins.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Spring</title>
-      <link>https://jij000.github.io/categories/spring.html</link>
+      <link>https://blog.ykeeps.com/categories/spring.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://jij000.github.io/categories/spring.html</guid>
+      <guid>https://blog.ykeeps.com/categories/spring.html</guid>
       <description></description>
     </item>
     
