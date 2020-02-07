@@ -28,7 +28,7 @@ Anntation @Test @BeforeEach @BeforeAll @AfterEach @AfterAll Assertions.xxx() @Mo
       
       <guid>https://jij000.github.io/post/the-process-of-creating-a-blog-system.html</guid>
       <description>Key function  支持 markdown Angular / React 做界面 MySQL 保存数据 build on Kubernetes Junit 测试 Jenkins CI/CD micro service  user service blog comment Kafka 消息队列接受评论, 审核后发布 wiki 系统    Windows下安装minikube minikube使用帮助(https://kubernetes.io/docs/setup/learning-environment/minikube/) 安装Minikube
-# To access the Kubernetes Dashboard, run this command in a shell after starting Minikube to get the address minikube dashboard # To access a Service exposed via a node port, run this command in a shell after starting Minikube to get the address minikube service [-n NAMESPACE] [--url] NAME </description>
+# To access the Kubernetes Dashboard, run this command in a shell after starting Minikube to get the address minikube dashboard # To access a Service exposed via a node port, run this command in a shell after starting Minikube to get the address minikube service [-n NAMESPACE] [--url] NAME design domain  micro service  user post comment    参照MangoDB的官方示例 https://www.</description>
     </item>
     
     <item>
@@ -136,6 +136,17 @@ Pod 运行容器, 可运行多个 所有Pod在一个可直接连通的扁平的�
 Dashboard 给K8S集群一个B/S访问体系
 Deploying the Dashboard UI The Dashboard UI is not deployed by default. To deploy it, run the following command:
 # 安装 Dashboardkubectl apply -f https://raw.</description>
+    </item>
+    
+    <item>
+      <title>Angular</title>
+      <link>https://jij000.github.io/post/angular.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jij000.github.io/post/angular.html</guid>
+      <description>参考资料 https://coding.imooc.com/class/336.html
+环境安装 nodejs npm https://www.npmjs.com/package/@angular/cli
+创建工程 # 转到适当文件夹, 创建工程 ng new pingduoduo # 进入工程文件夹, 安装依赖包, 安装在 node_modules 下面 # 无需执行, new 工程时已集成 npm install # 编译并启动服务器, 可预览 ng serve # 检查typescript语法, tslint.json定义了语法规则 ng lint  工程中文件定义     文件名 定义     package.json 每个npm包都会有, 定义了依赖关系   browserslist 定义了支持的浏览器   .editorconfig 编辑器的风格统一   angular.json Angular的配置(项目配置, 编译路径, 输出路径等)    Component (组件) 组件封装 组件输入输出 组件的生命周期 模板在组件类中的引用  开发用工具: https://docs.</description>
     </item>
     
     <item>

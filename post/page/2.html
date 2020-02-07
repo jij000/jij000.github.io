@@ -43,6 +43,13 @@
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
+			<a class="menu__link" href="/post/angular.html">
+				
+				<span class="menu__text">Angular</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
 			<a class="menu__link" href="/post/aws.html">
 				
 				<span class="menu__text">AWS</span>
@@ -180,6 +187,26 @@
 	<header class="main__header">
 		<h1 class="main__title">Posts</h1>
 	</header><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/angular.html" rel="bookmark">
+			Angular
+			</a>
+		</h3>
+		<p class="list__lead post__lead">Example lead - highlighted near the title</p>
+		<div class="list__meta meta">
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/angular.html" rel="category">Angular</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		参考资料 https://coding.imooc.com/class/336.html
+环境安装 nodejs npm https://www.npmjs.com/package/@angular/cli
+创建工程 # 转到适当文件夹, 创建工程 ng new pingduoduo # 进入工程文件夹, 安装依赖包, 安装在 node_modules 下面 # 无需执行, new 工程时已集成 npm install # 编译并启动服务器, 可预览 ng serve # 检查typescript语法, tslint.json定义了语法规则 ng lint  工程中文件定义     文件名 定义     package.json 每个npm包都会有, 定义了依赖关系   browserslist 定义了支持的浏览器   .editorconfig 编辑器的风格统一   angular.json Angular的配置(项目配置, 编译路径, 输出路径等)    Component (组件) 组件封装 组件输入输出 组件的生命周期 模板在组件类中的引用  开发用工具: https://docs.
+	</div>
+</article><article class="list__item post">
 	<figure class="list__thumbnail">
 		<a href="https://jij000.github.io/post/aws.html">
 			<img src="/Thumbnail/aws_logo.jpg" alt="AWS" />
@@ -401,6 +428,9 @@ Spring对每个bean提供了一个scope属性来表示该bean的作用域。它�
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item">
+				<a class="widget__link" href="/categories/angular.html">Angular</a>
+			</li>
+			<li class="widget__item">
 				<a class="widget__link" href="/categories/aws.html">AWS</a>
 			</li>
 			<li class="widget__item">
@@ -454,6 +484,7 @@ Spring对每个bean提供了一个scope属性来表示该bean的作用域。它�
 <div class="widget-taglist widget">
 	<h4 class="widget__title">Tags</h4>
 	<div class="widget__content">
+		<a class="widget-taglist__link widget__link btn" href="/tags/angular.html" title="Angular">Angular</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/another-test.html" title="Another test">Another test</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/aws.html" title="AWS">AWS</a>
 		<a class="widget-taglist__link widget__link btn" href="/tags/blog.html" title="blog">blog</a>
