@@ -146,7 +146,7 @@ Deploying the Dashboard UI The Dashboard UI is not deployed by default. To deplo
       <guid>https://blog.ykeeps.com/post/angular.html</guid>
       <description>参考资料 https://coding.imooc.com/class/336.html
 环境安装 nodejs npm https://www.npmjs.com/package/@angular/cli
-创建工程 # 转到适当文件夹, 创建工程 ng new pingduoduo # 进入工程文件夹, 安装依赖包, 安装在 node_modules 下面 # 无需执行, new 工程时已集成 npm install # 编译并启动服务器, 可预览 ng serve # 检查typescript语法, tslint.json定义了语法规则 ng lint  工程中文件定义     文件名 定义     package.json 每个npm包都会有, 定义了依赖关系   browserslist 定义了支持的浏览器   .editorconfig 编辑器的风格统一   angular.json Angular的配置(项目配置, 编译路径, 输出路径等)    Component (组件) 组件封装 组件输入输出 组件的生命周期 模板在组件类中的引用  开发用工具: https://docs.</description>
+创建工程 # 转到适当文件夹, 创建工程 ng new pingduoduo # 进入工程文件夹, 安装依赖包, 安装在 node_modules 下面 # 无需执行, new 工程时已集成 npm install # 编译并启动服务器, 可预览 ng serve # 检查typescript语法, tslint.json定义了语法规则 ng lint  工程中文件定义     文件名 定义     package.json 每个npm包都会有, 定义了依赖关系   browserslist 定义了支持的浏览器   .editorconfig 编辑器的风格统一   angular.json Angular的配置(项目配置, 编译路径, 输出路径等)    Component (组件) 组件封装 组件输入输出 组件的生命周期 模板在组件类中的引用 组件嵌套 投影组件  开发用工具: https://docs.</description>
     </item>
     
     <item>
@@ -178,7 +178,8 @@ EKS Amazon Elastic Kubernetes Service</description>
       <guid>https://blog.ykeeps.com/post/ejb.html</guid>
       <description>参考资料 EJB到底是什么，真的那么神秘吗？？ EJB Tutorial
 EJB 概念  将业务逻辑从客户端软件中抽取出来，封装在一个组件中。这个组件运行在一个独立的服务器上，客户端软件通过网络调用组件提供的服务以实现业务逻辑，而客户端软件的功能单纯到只负责发送调用请求和显示处理结果。 在J2EE 中，这个运行在一个独立的服务器上，并封装了业务逻辑的组件就是EJB（Enterprise JavaBean）组件。 企业开发的逻辑非常复杂, 将业务逻辑抽取出来, 便于组件复用?  EJB 的实现技术 EJB 是运行在独立服务器上的组件，客户端是通过网络对EJB 对象进行调用的。在Java中，能够实现远程对象调用的技术是RMI，而EJB 技术基础正是RMI。通过RMI 技术，J2EE将EJB 组件创建为远程对象，客户端就可以通过网络调用EJB 对象了。
-RMI RMI 英文全称是&amp;quot;Remote Method Invocation&amp;rdquo;，它的中文名称是&amp;quot;远程方法调用&amp;rdquo;，它就是利用Java 对象序列化的机制实现分布式计算，实现远程类对象的实例化以及调用的方法。</description>
+RMI RMI 英文全称是&amp;quot;Remote Method Invocation&amp;rdquo;，它的中文名称是&amp;quot;远程方法调用&amp;rdquo;，它就是利用Java 对象序列化的机制实现分布式计算，实现远程类对象的实例化以及调用的方法。
+总结 EJB实现了分布式计算, 就是直接远程调用Bean(一个类), 相对的, 现代的微服务是调用API</description>
     </item>
     
     <item>

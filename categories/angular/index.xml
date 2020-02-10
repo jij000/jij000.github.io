@@ -18,7 +18,7 @@
       <guid>https://blog.ykeeps.com/post/angular.html</guid>
       <description>参考资料 https://coding.imooc.com/class/336.html
 环境安装 nodejs npm https://www.npmjs.com/package/@angular/cli
-创建工程 # 转到适当文件夹, 创建工程 ng new pingduoduo # 进入工程文件夹, 安装依赖包, 安装在 node_modules 下面 # 无需执行, new 工程时已集成 npm install # 编译并启动服务器, 可预览 ng serve # 检查typescript语法, tslint.json定义了语法规则 ng lint  工程中文件定义     文件名 定义     package.json 每个npm包都会有, 定义了依赖关系   browserslist 定义了支持的浏览器   .editorconfig 编辑器的风格统一   angular.json Angular的配置(项目配置, 编译路径, 输出路径等)    Component (组件) 组件封装 组件输入输出 组件的生命周期 模板在组件类中的引用  开发用工具: https://docs.</description>
+创建工程 # 转到适当文件夹, 创建工程 ng new pingduoduo # 进入工程文件夹, 安装依赖包, 安装在 node_modules 下面 # 无需执行, new 工程时已集成 npm install # 编译并启动服务器, 可预览 ng serve # 检查typescript语法, tslint.json定义了语法规则 ng lint  工程中文件定义     文件名 定义     package.json 每个npm包都会有, 定义了依赖关系   browserslist 定义了支持的浏览器   .editorconfig 编辑器的风格统一   angular.json Angular的配置(项目配置, 编译路径, 输出路径等)    Component (组件) 组件封装 组件输入输出 组件的生命周期 模板在组件类中的引用 组件嵌套 投影组件  开发用工具: https://docs.</description>
     </item>
     
   </channel>

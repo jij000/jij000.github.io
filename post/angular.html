@@ -10,7 +10,7 @@
 	<meta property="og:title" content="Angular" />
 <meta property="og:description" content="参考资料 https://coding.imooc.com/class/336.html
 环境安装 nodejs npm https://www.npmjs.com/package/@angular/cli
-创建工程 # 转到适当文件夹, 创建工程 ng new pingduoduo # 进入工程文件夹, 安装依赖包, 安装在 node_modules 下面 # 无需执行, new 工程时已集成 npm install # 编译并启动服务器, 可预览 ng serve # 检查typescript语法, tslint.json定义了语法规则 ng lint  工程中文件定义     文件名 定义     package.json 每个npm包都会有, 定义了依赖关系   browserslist 定义了支持的浏览器   .editorconfig 编辑器的风格统一   angular.json Angular的配置(项目配置, 编译路径, 输出路径等)    Component (组件) 组件封装 组件输入输出 组件的生命周期 模板在组件类中的引用  开发用工具: https://docs." />
+创建工程 # 转到适当文件夹, 创建工程 ng new pingduoduo # 进入工程文件夹, 安装依赖包, 安装在 node_modules 下面 # 无需执行, new 工程时已集成 npm install # 编译并启动服务器, 可预览 ng serve # 检查typescript语法, tslint.json定义了语法规则 ng lint  工程中文件定义     文件名 定义     package.json 每个npm包都会有, 定义了依赖关系   browserslist 定义了支持的浏览器   .editorconfig 编辑器的风格统一   angular.json Angular的配置(项目配置, 编译路径, 输出路径等)    Component (组件) 组件封装 组件输入输出 组件的生命周期 模板在组件类中的引用 组件嵌套 投影组件  开发用工具: https://docs." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://blog.ykeeps.com/post/angular.html" />
 
@@ -19,7 +19,7 @@
 <meta name="twitter:title" content="Angular"/>
 <meta name="twitter:description" content="参考资料 https://coding.imooc.com/class/336.html
 环境安装 nodejs npm https://www.npmjs.com/package/@angular/cli
-创建工程 # 转到适当文件夹, 创建工程 ng new pingduoduo # 进入工程文件夹, 安装依赖包, 安装在 node_modules 下面 # 无需执行, new 工程时已集成 npm install # 编译并启动服务器, 可预览 ng serve # 检查typescript语法, tslint.json定义了语法规则 ng lint  工程中文件定义     文件名 定义     package.json 每个npm包都会有, 定义了依赖关系   browserslist 定义了支持的浏览器   .editorconfig 编辑器的风格统一   angular.json Angular的配置(项目配置, 编译路径, 输出路径等)    Component (组件) 组件封装 组件输入输出 组件的生命周期 模板在组件类中的引用  开发用工具: https://docs."/>
+创建工程 # 转到适当文件夹, 创建工程 ng new pingduoduo # 进入工程文件夹, 安装依赖包, 安装在 node_modules 下面 # 无需执行, new 工程时已集成 npm install # 编译并启动服务器, 可预览 ng serve # 检查typescript语法, tslint.json定义了语法规则 ng lint  工程中文件定义     文件名 定义     package.json 每个npm包都会有, 定义了依赖关系   browserslist 定义了支持的浏览器   .editorconfig 编辑器的风格统一   angular.json Angular的配置(项目配置, 编译路径, 输出路径等)    Component (组件) 组件封装 组件输入输出 组件的生命周期 模板在组件类中的引用 组件嵌套 投影组件  开发用工具: https://docs."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -211,6 +211,8 @@
         <li><a href="#组件输入输出">组件输入输出</a></li>
         <li><a href="#组件的生命周期">组件的生命周期</a></li>
         <li><a href="#模板在组件类中的引用">模板在组件类中的引用</a></li>
+        <li><a href="#组件嵌套">组件嵌套</a></li>
+        <li><a href="#投影组件">投影组件</a></li>
       </ul>
     </li>
     <li><a href="#typescript">TypeScript</a></li>
@@ -219,6 +221,31 @@
       <ul>
         <li><a href="#ngfor">*ngFor</a></li>
         <li><a href="#ngif">*ngIf</a></li>
+      </ul>
+    </li>
+    <li><a href="#事件处理和样式绑定">事件处理和样式绑定</a></li>
+    <li><a href="#双向绑定">双向绑定</a></li>
+    <li><a href="#模块">模块</a></li>
+    <li><a href="#注解">注解</a></li>
+    <li><a href="#指令">指令</a>
+      <ul>
+        <li><a href="#指令的样式和事件绑定">指令的样式和事件绑定</a></li>
+      </ul>
+    </li>
+    <li><a href="#路由">路由</a>
+      <ul>
+        <li><a href="#子路由">子路由</a></li>
+      </ul>
+    </li>
+    <li><a href="#angular-httpclient">Angular HttpClient</a></li>
+    <li><a href="#angular-拦截器">Angular 拦截器</a></li>
+    <li><a href="#rxjs-响应式编程">rxjs-响应式编程</a></li>
+    <li><a href="#ivy">Ivy</a></li>
+    <li><a href="#上线部署">上线部署</a>
+      <ul>
+        <li><a href="#生产环境的编译">生产环境的编译</a></li>
+        <li><a href="#懒加载提升首页载入性能">懒加载提升首页载入性能</a></li>
+        <li><a href="#gzip-压缩资源文件-节约传输时间">gzip 压缩资源文件, 节约传输时间</a></li>
       </ul>
     </li>
   </ul>
@@ -286,7 +313,14 @@ ng lint
 <h3 id="组件的生命周期">组件的生命周期</h3>
 <p><img src="./images/1581047687018.png" alt="enter description here"></p>
 <h3 id="模板在组件类中的引用">模板在组件类中的引用</h3>
-<p><img src="./images/1581047762120.png" alt="enter description here"></p>
+<p><img src="./images/1581047762120.png" alt="enter description here">
+<img src="./images/1581222845052.png" alt="enter description here">
+<img src="./images/1581222869045.png" alt="enter description here">
+<img src="./images/1581224367312.png" alt="enter description here"></p>
+<h3 id="组件嵌套">组件嵌套</h3>
+<p><img src="./images/1581285520931.png" alt="enter description here"></p>
+<h3 id="投影组件">投影组件</h3>
+<p><img src="./images/1581285654829.png" alt="enter description here"></p>
 <blockquote>
 <p>开发用工具: <a href="https://docs.emmet.io/">https://docs.emmet.io/</a></p>
 </blockquote>
@@ -300,10 +334,56 @@ ng lint
 <img src="./images/1581046467371.png" alt="enter description here">
 <img src="./images/1581046515662.png" alt="enter description here">
 <img src="./images/1581046537536.png" alt="enter description here">
-<img src="./images/1581046577397.png" alt="enter description here">
-<img src="./images/1581046604973.png" alt="enter description here"></p>
+<img src="./images/1581046577397.png" alt="enter description here"></p>
 <h3 id="ngif">*ngIf</h3>
 <p><img src="./images/1581047288913.png" alt="enter description here"></p>
+<h2 id="事件处理和样式绑定">事件处理和样式绑定</h2>
+<p><img src="./images/1581046604973.png" alt="enter description here">
+<img src="./images/1581196582684.png" alt="enter description here"></p>
+<h2 id="双向绑定">双向绑定</h2>
+<p><img src="./images/1581226630125.png" alt="enter description here">
+<img src="./images/1581226697015.png" alt="enter description here"></p>
+<h2 id="模块">模块</h2>
+<p>一个模块集成多个组件
+<img src="./images/1581270247812.png" alt="enter description here">
+<img src="./images/1581270560892.png" alt="enter description here">
+<img src="./images/1581270637011.png" alt="enter description here">
+<img src="./images/1581270731522.png" alt="enter description here"></p>
+<h2 id="注解">注解</h2>
+<p>返回函数的函数
+<img src="./images/1581282714435.png" alt="enter description here"></p>
+<h2 id="指令">指令</h2>
+<p><img src="./images/1581284254313.png" alt="enter description here">
+<img src="./images/1581284352554.png" alt="enter description here"></p>
+<h3 id="指令的样式和事件绑定">指令的样式和事件绑定</h3>
+<p><img src="./images/1581285207236.png" alt="enter description here"></p>
+<h2 id="路由">路由</h2>
+<p><img src="./images/1581286332806.png" alt="enter description here">
+<img src="./images/1581286624766.png" alt="enter description here"></p>
+<h3 id="子路由">子路由</h3>
+<p><img src="./images/1581286977485.png" alt="enter description here">
+<img src="./images/1581287017615.png" alt="enter description here">
+<img src="./images/1581287034946.png" alt="enter description here"></p>
+<ul>
+<li>用变量定义子路由路径
+<img src="./images/1581287086241.png" alt="enter description here"></li>
+</ul>
+<h2 id="angular-httpclient">Angular HttpClient</h2>
+<p><img src="./images/1581288133385.png" alt="enter description here"></p>
+<h2 id="angular-拦截器">Angular 拦截器</h2>
+<h2 id="rxjs-响应式编程">rxjs-响应式编程</h2>
+<p><img src="./images/1581289519828.png" alt="enter description here">
+<img src="./images/1581289580465.png" alt="enter description here">
+<img src="./images/1581289666430.png" alt="enter description here"></p>
+<h2 id="ivy">Ivy</h2>
+<p><img src="./images/1581293800378.png" alt="enter description here"></p>
+<h2 id="上线部署">上线部署</h2>
+<p><img src="./images/1581292577867.png" alt="enter description here"></p>
+<h3 id="生产环境的编译">生产环境的编译</h3>
+<p><img src="./images/1581292691985.png" alt="enter description here"></p>
+<h3 id="懒加载提升首页载入性能">懒加载提升首页载入性能</h3>
+<h3 id="gzip-压缩资源文件-节约传输时间">gzip 压缩资源文件, 节约传输时间</h3>
+<p><img src="./images/1581294010629.png" alt="enter description here"></p>
 
 		</div>
 		<footer class="post__footer">
