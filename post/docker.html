@@ -210,6 +210,7 @@
     <li><a href="#常用命令">常用命令</a></li>
     <li><a href="#制作镜像">制作镜像</a></li>
     <li><a href="#参考资料">参考资料</a></li>
+    <li><a href="#window-下的docker">window 下的docker</a></li>
   </ul>
 </nav>
 	</div>
@@ -245,6 +246,12 @@ COPY jpress.war /usr/local/tomcat/webapps
 <p><img src="./images/2020-01-26-10-08-55.jpg" alt=""></p>
 <p><img src="./images/2020-01-26-10-09-29.jpg" alt=""></p>
 <p><img src="./images/2020-01-26-10-09-47.jpg" alt=""></p>
+<h2 id="window-下的docker">window 下的docker</h2>
+<p>如果需要映射volume 到 Windows 本地磁盘, 需要先做如下设置:
+<img src="./images/1582169636747.png" alt="enter description here"></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e"># -v windows 目录(正反斜杠皆可) : 容器目录</span>
+docker run -p 8080:8080 -p 50000:50000 -v d:/dockerVol/jenkins_home:/var/jenkins_home jenkins/jenkins:lts
+</code></pre></div><p><a href="https://hackernoon.com/jenkins-docker-and-cicd-for-serverless-bw5p323d">Using Jenkins, Docker and CI/CD for Serverless Applications</a></p>
 
 		</div>
 		<footer class="post__footer">
