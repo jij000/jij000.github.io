@@ -4,22 +4,22 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Elasticsearch - My Blog</title>
+	<title>Category 1 - My Blog</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
 	<meta name="description" content="">
-	<meta property="og:title" content="Elasticsearch" />
+	<meta property="og:title" content="Category 1" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://blog.ykeeps.com/tags/elasticsearch.html" />
-<meta property="og:updated_time" content="2020-01-29T00:00:00+00:00" />
+<meta property="og:url" content="https://blog.ykeeps.com/categories/category-1.html" />
+
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Elasticsearch"/>
+<meta name="twitter:title" content="Category 1"/>
 <meta name="twitter:description" content=""/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="alternate" type="application/rss+xml" href="/tags/elasticsearch/index.xml" title="My Blog">
+	<link rel="alternate" type="application/rss+xml" href="/categories/category-1/index.xml" title="My Blog">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
 	<link rel="stylesheet" href="/css/style.css">
 	
@@ -192,30 +192,24 @@
 			
 <main class="main list" role="main">
 	<header class="main__header">
-		<h1 class="main__title">Elasticsearch</h1>
+		<h1 class="main__title">Category 1</h1>
 	</header><article class="list__item post">
 	<header class="list__header">
 		<h3 class="list__title post__title ">
-			<a href="/post/elk.html" rel="bookmark">
-			ELK
+			<a href="/post/domain_driven_design.html" rel="bookmark">
+			Example article title
 			</a>
 		</h3>
+		<p class="list__lead post__lead">Example lead - highlighted near the title</p>
 		<div class="list__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2020-01-29T00:00:00">2020-01-29</time>
-</div>
-
 <div class="meta__item-categories meta__item">
 	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/elk.html" rel="category">ELK</a>
+	<span class="meta__text"><a class="meta__link" href="/categories/category-1.html" rel="category">Category 1</a>
 	</span>
 </div></div>
 	</header>
 	<div class="content list__excerpt post__content clearfix">
-		https://www.elastic.co/cn/what-is/elk-stack
-“ELK”是三个开源项目的首字母缩写，这三个项目分别是：Elasticsearch、Logstash 和 Kibana。Elasticsearch 是一个搜索和分析引擎。Logstash 是服务器端数据处理管道，能够同时从多个来源采集数据，转换数据，然后将数据发送到诸如 Elasticsearch 等“存储库”中。Kibana 则可以让用户在 Elasticsearch 中使用图形和图表对数据进行可视化。
-Elastic Stack 是 ELK Stack 的更新换代产品。
+		DOMAIN DRIVEN DESIGN Domain Model Patterns Entities  A class with identity Mutable  Value objects  Has no identity Immutable Value object characteristics  No identity Attribute-based equality Behavior rich Cohesive Immutable Combinable Self-validating Testable   Persisting value objects  Persist them into a denormalized form  Relational -&gt; Save them as String (using toString()) NoSQL -&gt; Embed them into the entity document   Persist them into a separate relational table -&gt; Give the value object an id   Entities versus Value objects  从Entities 中 抽象派生出 Value objects Value objects 作为 Entities 中的一个属性, 不能独立生存, Immutable, 如果需要变更, 我们new 一个 Value object 再重新赋值给Entities, 一般不需要独自的table去保存, 但是需要时也可以 Entities 可以独立生存, 有完整的生命周期 Value objects 越多越好    Domain services  Sometimes behavior does not belong to an entity or value object, Use a domain service Domain service characteristics  Stateless, 没有自己的属性 Represent behavior, 没有id Often orchestrate multiple domain objects, (涉及到multiple domain objects)    Domain events  代表Domain 会发生的 events(事件) 的类 Immutable Events are raised and event handlers handle them Some handlers live in the domain, and some live in the service layer.
 	</div>
 </article>
 </main>

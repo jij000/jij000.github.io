@@ -18,12 +18,12 @@
   </url>
   
   <url>
-    <loc>https://blog.ykeeps.com/tags/junit.html</loc>
+    <loc>https://blog.ykeeps.com/categories/junit.html</loc>
     <lastmod>2020-01-31T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.ykeeps.com/categories/junit.html</loc>
+    <loc>https://blog.ykeeps.com/tags/junit.html</loc>
     <lastmod>2020-01-31T00:00:00+00:00</lastmod>
   </url>
   
@@ -53,12 +53,12 @@
   </url>
   
   <url>
-    <loc>https://blog.ykeeps.com/categories/english.html</loc>
+    <loc>https://blog.ykeeps.com/tags/english.html</loc>
     <lastmod>2020-01-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.ykeeps.com/tags/english.html</loc>
+    <loc>https://blog.ykeeps.com/categories/english.html</loc>
     <lastmod>2020-01-30T00:00:00+00:00</lastmod>
   </url>
   
@@ -153,12 +153,12 @@
   </url>
   
   <url>
-    <loc>https://blog.ykeeps.com/categories/hibernate.html</loc>
+    <loc>https://blog.ykeeps.com/tags/hibernate.html</loc>
     <lastmod>2020-01-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.ykeeps.com/tags/hibernate.html</loc>
+    <loc>https://blog.ykeeps.com/categories/hibernate.html</loc>
     <lastmod>2020-01-26T00:00:00+00:00</lastmod>
   </url>
   
@@ -168,12 +168,12 @@
   </url>
   
   <url>
-    <loc>https://blog.ykeeps.com/tags/kubernetes.html</loc>
+    <loc>https://blog.ykeeps.com/categories/kubernetes.html</loc>
     <lastmod>2020-01-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://blog.ykeeps.com/categories/kubernetes.html</loc>
+    <loc>https://blog.ykeeps.com/tags/kubernetes.html</loc>
     <lastmod>2020-01-21T00:00:00+00:00</lastmod>
   </url>
   
@@ -183,11 +183,11 @@
   </url>
   
   <url>
-    <loc>https://blog.ykeeps.com/tags/angular.html</loc>
+    <loc>https://blog.ykeeps.com/categories/angular.html</loc>
   </url>
   
   <url>
-    <loc>https://blog.ykeeps.com/categories/angular.html</loc>
+    <loc>https://blog.ykeeps.com/tags/angular.html</loc>
   </url>
   
   <url>
@@ -199,15 +199,19 @@
   </url>
   
   <url>
-    <loc>https://blog.ykeeps.com/tags/aws.html</loc>
-  </url>
-  
-  <url>
     <loc>https://blog.ykeeps.com/categories/aws.html</loc>
   </url>
   
   <url>
+    <loc>https://blog.ykeeps.com/tags/aws.html</loc>
+  </url>
+  
+  <url>
     <loc>https://blog.ykeeps.com/post/aws.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.ykeeps.com/categories/category-1.html</loc>
   </url>
   
   <url>
@@ -223,15 +227,19 @@
   </url>
   
   <url>
-    <loc>https://blog.ykeeps.com/tags/ejb.html</loc>
-  </url>
-  
-  <url>
     <loc>https://blog.ykeeps.com/categories/ejb.html</loc>
   </url>
   
   <url>
+    <loc>https://blog.ykeeps.com/tags/ejb.html</loc>
+  </url>
+  
+  <url>
     <loc>https://blog.ykeeps.com/post/ejb.html</loc>
+  </url>
+  
+  <url>
+    <loc>https://blog.ykeeps.com/post/domain_driven_design.html</loc>
   </url>
   
   <url>
@@ -243,11 +251,11 @@
   </url>
   
   <url>
-    <loc>https://blog.ykeeps.com/tags/jenkins.html</loc>
+    <loc>https://blog.ykeeps.com/categories/jenkins.html</loc>
   </url>
   
   <url>
-    <loc>https://blog.ykeeps.com/categories/jenkins.html</loc>
+    <loc>https://blog.ykeeps.com/tags/jenkins.html</loc>
   </url>
   
   <url>
@@ -267,11 +275,11 @@
   </url>
   
   <url>
-    <loc>https://blog.ykeeps.com/tags/spring.html</loc>
+    <loc>https://blog.ykeeps.com/categories/spring.html</loc>
   </url>
   
   <url>
-    <loc>https://blog.ykeeps.com/categories/spring.html</loc>
+    <loc>https://blog.ykeeps.com/tags/spring.html</loc>
   </url>
   
   <url>

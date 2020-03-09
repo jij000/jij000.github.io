@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>Example article title</title>
+      <link>https://blog.ykeeps.com/post/domain_driven_design.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.ykeeps.com/post/domain_driven_design.html</guid>
+      <description>DOMAIN DRIVEN DESIGN Domain Model Patterns Entities  A class with identity Mutable  Value objects  Has no identity Immutable Value object characteristics  No identity Attribute-based equality Behavior rich Cohesive Immutable Combinable Self-validating Testable   Persisting value objects  Persist them into a denormalized form  Relational -&amp;gt; Save them as String (using toString()) NoSQL -&amp;gt; Embed them into the entity document   Persist them into a separate relational table -&amp;gt; Give the value object an id   Entities versus Value objects  从Entities 中 抽象派生出 Value objects Value objects 作为 Entities 中的一个属性, 不能独立生存, Immutable, 如果需要变更, 我们new 一个 Value object 再重新赋值给Entities, 一般不需要独自的table去保存, 但是需要时也可以 Entities 可以独立生存, 有完整的生命周期 Value objects 越多越好    Domain services  Sometimes behavior does not belong to an entity or value object, Use a domain service Domain service characteristics  Stateless, 没有自己的属性 Represent behavior, 没有id Often orchestrate multiple domain objects, (涉及到multiple domain objects)    Domain events  代表Domain 会发生的 events(事件) 的类 Immutable Events are raised and event handlers handle them Some handlers live in the domain, and some live in the service layer.</description>
+    </item>
+    
+    <item>
       <title>Java Core</title>
       <link>https://blog.ykeeps.com/post/java-core.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>

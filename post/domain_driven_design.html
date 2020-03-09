@@ -4,19 +4,18 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Hibernate - My Blog</title>
+	<title>Example article title - My Blog</title>
 	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="Hibernate Note">
-	<meta property="og:title" content="Hibernate" />
-<meta property="og:description" content="Hibernate Note" />
+	<meta name="description" content="">
+	<meta property="og:title" content="Example article title" />
+<meta property="og:description" content="DOMAIN DRIVEN DESIGN Domain Model Patterns Entities  A class with identity Mutable  Value objects  Has no identity Immutable Value object characteristics  No identity Attribute-based equality Behavior rich Cohesive Immutable Combinable Self-validating Testable   Persisting value objects  Persist them into a denormalized form  Relational -&gt; Save them as String (using toString()) NoSQL -&gt; Embed them into the entity document   Persist them into a separate relational table -&gt; Give the value object an id   Entities versus Value objects  从Entities 中 抽象派生出 Value objects Value objects 作为 Entities 中的一个属性, 不能独立生存, Immutable, 如果需要变更, 我们new 一个 Value object 再重新赋值给Entities, 一般不需要独自的table去保存, 但是需要时也可以 Entities 可以独立生存, 有完整的生命周期 Value objects 越多越好    Domain services  Sometimes behavior does not belong to an entity or value object, Use a domain service Domain service characteristics  Stateless, 没有自己的属性 Represent behavior, 没有id Often orchestrate multiple domain objects, (涉及到multiple domain objects)    Domain events  代表Domain 会发生的 events(事件) 的类 Immutable Events are raised and event handlers handle them Some handlers live in the domain, and some live in the service layer." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://blog.ykeeps.com/post/hibernate.html" />
-<meta property="article:published_time" content="2020-01-26T00:00:00+00:00" />
-<meta property="article:modified_time" content="2020-01-26T00:00:00+00:00" />
+<meta property="og:url" content="https://blog.ykeeps.com/post/domain_driven_design.html" />
+
 
 	<meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Hibernate"/>
-<meta name="twitter:description" content="Hibernate Note"/>
+<meta name="twitter:title" content="Example article title"/>
+<meta name="twitter:description" content="DOMAIN DRIVEN DESIGN Domain Model Patterns Entities  A class with identity Mutable  Value objects  Has no identity Immutable Value object characteristics  No identity Attribute-based equality Behavior rich Cohesive Immutable Combinable Self-validating Testable   Persisting value objects  Persist them into a denormalized form  Relational -&gt; Save them as String (using toString()) NoSQL -&gt; Embed them into the entity document   Persist them into a separate relational table -&gt; Give the value object an id   Entities versus Value objects  从Entities 中 抽象派生出 Value objects Value objects 作为 Entities 中的一个属性, 不能独立生存, Immutable, 如果需要变更, 我们new 一个 Value object 再重新赋值给Entities, 一般不需要独自的table去保存, 但是需要时也可以 Entities 可以独立生存, 有完整的生命周期 Value objects 越多越好    Domain services  Sometimes behavior does not belong to an entity or value object, Use a domain service Domain service characteristics  Stateless, 没有自己的属性 Represent behavior, 没有id Often orchestrate multiple domain objects, (涉及到multiple domain objects)    Domain events  代表Domain 会发生的 events(事件) 的类 Immutable Events are raised and event handlers handle them Some handlers live in the domain, and some live in the service layer."/>
 
 	<link rel="dns-prefetch" href="//fonts.googleapis.com">
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -84,14 +83,14 @@
 				
 			</a>
 		</li>
-		<li class="menu__item">
+		<li class="menu__item menu__item--active">
 			<a class="menu__link" href="/post/domain_driven_design.html">
 				
 				<span class="menu__text">Example article title</span>
 				
 			</a>
 		</li>
-		<li class="menu__item menu__item--active">
+		<li class="menu__item">
 			<a class="menu__link" href="/post/hibernate.html">
 				
 				<span class="menu__text">Hibernate</span>
@@ -193,44 +192,101 @@
 <main class="main" role="main">
 	<article class="post">
 		<header class="post__header">
-			<h1 class="post__title">Hibernate</h1>
+			<h1 class="post__title">Example article title</h1>
+			<p class="post__lead">Example lead - highlighted near the title</p>
 			<div class="post__meta meta">
-<div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg>
-	<time class="meta__text" datetime="2020-01-26T00:00:00">2020-01-26</time>
-</div>
-
 <div class="meta__item-categories meta__item">
 	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
-	<span class="meta__text"><a class="meta__link" href="/categories/hibernate.html" rel="category">Hibernate</a>
+	<span class="meta__text"><a class="meta__link" href="/categories/category-1.html" rel="category">Category 1</a>
 	</span>
 </div></div>
 		</header>
-		<figure class="post__thumbnail">
-			<img src="/Thumbnail/hibernate2.png" alt="Hibernate">
-		</figure>
 <div class="post__toc toc">
 	<div class="toc__title">Page content</div>
 	<div class="toc__menu">
 		<nav id="TableOfContents">
   <ul>
-    <li><a href="#transaction-isolation-levels">Transaction isolation levels</a></li>
-    <li><a href="#four-isolation-levels-">Four isolation levels :</a></li>
+    <li><a href="#domain-driven-design">DOMAIN DRIVEN DESIGN</a>
+      <ul>
+        <li><a href="#domain-model-patterns">Domain Model Patterns</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 	</div>
 </div>
 <div class="content post__content clearfix">
-			<h2 id="transaction-isolation-levels">Transaction isolation levels</h2>
-<p><a href="https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/">https://www.geeksforgeeks.org/transaction-isolation-levels-dbms/</a>
-A transaction isolation level is defined by the following phenomena –</p>
+			<h2 id="domain-driven-design">DOMAIN DRIVEN DESIGN</h2>
+<h3 id="domain-model-patterns">Domain Model Patterns</h3>
+<h4 id="entities">Entities</h4>
 <ul>
-<li><strong>Dirty Read</strong> – A Dirty read is the situation when a transaction reads a data that has not yet been committed. For example, Let’s say transaction 1 updates a row and leaves it uncommitted, meanwhile, Transaction 2 reads the updated row. If transaction 1 rolls back the change, transaction 2 will have read data that is considered never to have existed.</li>
-<li><strong>Non Repeatable read</strong> – Non Repeatable read occurs when a transaction reads same row twice, and get a different value each time. For example, suppose transaction T1 reads data. Due to concurrency, another transaction T2 updates the same data and commit, Now if transaction T1 rereads the same data, it will retrieve a different value.</li>
-<li><strong>Phantom Read</strong> – Phantom Read occurs when two same queries are executed, but the rows retrieved by the two, are different. For example, suppose transaction T1 retrieves a set of rows that satisfy some search criteria. Now, Transaction T2 generates some new rows that match the search criteria for transaction T1. If transaction T1 re-executes the statement that reads the rows, it gets a different set of rows this time.</li>
+<li>A class with identity</li>
+<li>Mutable</li>
 </ul>
-<h2 id="four-isolation-levels-">Four isolation levels :</h2>
-<p><img src="./images/2020-01-26-23-07-12.jpg" alt=""></p>
+<h4 id="value-objects">Value objects</h4>
+<ul>
+<li>Has no identity</li>
+<li>Immutable</li>
+<li>Value object characteristics
+<ul>
+<li>No identity</li>
+<li>Attribute-based equality</li>
+<li>Behavior rich</li>
+<li>Cohesive</li>
+<li>Immutable</li>
+<li>Combinable</li>
+<li>Self-validating</li>
+<li>Testable</li>
+</ul>
+</li>
+<li>Persisting value objects
+<ul>
+<li>Persist them into a denormalized form
+<ul>
+<li>Relational -&gt; Save them as String (using toString())</li>
+<li>NoSQL -&gt; Embed them into the entity document</li>
+</ul>
+</li>
+<li>Persist them into a separate relational table -&gt; Give the value object an id</li>
+</ul>
+</li>
+<li>Entities versus Value objects
+<ul>
+<li>从Entities 中 抽象派生出 Value objects</li>
+<li>Value objects 作为 Entities 中的一个属性, 不能独立生存, Immutable, 如果需要变更, 我们new 一个 Value object 再重新赋值给Entities, 一般不需要独自的table去保存, 但是需要时也可以</li>
+<li>Entities 可以独立生存, 有完整的生命周期</li>
+<li>Value objects 越多越好</li>
+</ul>
+</li>
+</ul>
+<h4 id="domain-services">Domain services</h4>
+<ul>
+<li>Sometimes behavior does not belong to an entity or value object, Use a domain service</li>
+<li>Domain service characteristics
+<ul>
+<li>Stateless, 没有自己的属性</li>
+<li>Represent behavior, 没有id</li>
+<li>Often orchestrate multiple domain objects, (涉及到multiple domain objects)</li>
+</ul>
+</li>
+</ul>
+<h4 id="domain-events">Domain events</h4>
+<ul>
+<li>代表Domain 会发生的 events(事件) 的类</li>
+<li>Immutable</li>
+<li>Events are raised and event handlers handle them</li>
+<li>Some handlers live in the domain, and some live in the service layer.</li>
+</ul>
+<h4 id="aggregates">Aggregates</h4>
+<ul>
+<li>Large models are split and grouped into aggregates of entities and value objects that are treated as a conceptual whole <img src="./images/1583723920417.png" alt="enter description here"></li>
+<li>Aggregate root
+<ul>
+<li>An aggregate root acts as the entry point to the aggregate</li>
+<li>A large complex class structures can be split up is smaller and simpler class structures using aggregates</li>
+</ul>
+</li>
+</ul>
 
 		</div>
 		<footer class="post__footer">
@@ -238,7 +294,7 @@ A transaction isolation level is defined by the following phenomena –</p>
 <div class="post__tags tags clearfix">
 	<svg class="tags__badge icon icon-tag" width="16" height="16" viewBox="0 0 32 32"><path d="M32 19c0 1-1 2-1 2L21 31s-1 1-2 1-2-1-2-1L2 16c-1-1-1.4-2-1.4-2S0 12.5 0 11V3C0 1.5.8.8.8.8S1.5 0 3 0h8c1.5 0 3 .6 3 .6S15 1 16 2l15 15s1 1 1 2zM7 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg>
 	<ul class="tags__list">
-		<li class="tags__item"><a class="tags__link btn" href="/tags/hibernate/" rel="tag">Hibernate</a></li>
+		<li class="tags__item"><a class="tags__link btn" href="/tags/test/" rel="tag">Test</a></li>
 	</ul>
 </div>
 		</footer>
@@ -259,10 +315,10 @@ A transaction isolation level is defined by the following phenomena –</p>
 
 <nav class="post-nav flex">
 	<div class="post-nav__item post-nav__item--prev">
-		<a class="post-nav__link" href="/post/kubernetes.html" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Kubernetes</p></a>
+		<a class="post-nav__link" href="/post/java-core.html" rel="prev"><span class="post-nav__caption">«&thinsp;Previous</span><p class="post-nav__post-title">Java Core</p></a>
 	</div>
 	<div class="post-nav__item post-nav__item--next">
-		<a class="post-nav__link" href="/post/docker.html" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">Docker</p></a>
+		<a class="post-nav__link" href="/post/ejb.html" rel="next"><span class="post-nav__caption">Next&thinsp;»</span><p class="post-nav__post-title">EJB</p></a>
 	</div>
 </nav>
 

@@ -85,6 +85,13 @@
 			</a>
 		</li>
 		<li class="menu__item">
+			<a class="menu__link" href="/post/domain_driven_design.html">
+				
+				<span class="menu__text">Example article title</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
 			<a class="menu__link" href="/post/hibernate.html">
 				
 				<span class="menu__text">Hibernate</span>
@@ -187,6 +194,24 @@
 	<header class="main__header">
 		<h1 class="main__title">Test</h1>
 	</header><article class="list__item post">
+	<header class="list__header">
+		<h3 class="list__title post__title ">
+			<a href="/post/domain_driven_design.html" rel="bookmark">
+			Example article title
+			</a>
+		</h3>
+		<p class="list__lead post__lead">Example lead - highlighted near the title</p>
+		<div class="list__meta meta">
+<div class="meta__item-categories meta__item">
+	<svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg>
+	<span class="meta__text"><a class="meta__link" href="/categories/category-1.html" rel="category">Category 1</a>
+	</span>
+</div></div>
+	</header>
+	<div class="content list__excerpt post__content clearfix">
+		DOMAIN DRIVEN DESIGN Domain Model Patterns Entities  A class with identity Mutable  Value objects  Has no identity Immutable Value object characteristics  No identity Attribute-based equality Behavior rich Cohesive Immutable Combinable Self-validating Testable   Persisting value objects  Persist them into a denormalized form  Relational -&gt; Save them as String (using toString()) NoSQL -&gt; Embed them into the entity document   Persist them into a separate relational table -&gt; Give the value object an id   Entities versus Value objects  从Entities 中 抽象派生出 Value objects Value objects 作为 Entities 中的一个属性, 不能独立生存, Immutable, 如果需要变更, 我们new 一个 Value object 再重新赋值给Entities, 一般不需要独自的table去保存, 但是需要时也可以 Entities 可以独立生存, 有完整的生命周期 Value objects 越多越好    Domain services  Sometimes behavior does not belong to an entity or value object, Use a domain service Domain service characteristics  Stateless, 没有自己的属性 Represent behavior, 没有id Often orchestrate multiple domain objects, (涉及到multiple domain objects)    Domain events  代表Domain 会发生的 events(事件) 的类 Immutable Events are raised and event handlers handle them Some handlers live in the domain, and some live in the service layer.
+	</div>
+</article><article class="list__item post">
 	<figure class="list__thumbnail">
 		<a href="https://blog.ykeeps.com/post/java-core.html">
 			<img src="/Thumbnail/dbgxt2rvpd26udoyzcqn.0.0.jpg" alt="Java Core" />
@@ -278,6 +303,9 @@ Nashorn, JavaScript 引擎 Java 8提供了一个新的Nashorn javascript引擎�
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/blog.html">blog</a>
+			</li>
+			<li class="widget__item">
+				<a class="widget__link" href="/categories/category-1.html">Category 1</a>
 			</li>
 			<li class="widget__item">
 				<a class="widget__link" href="/categories/design-patterns.html">Design Patterns</a>
